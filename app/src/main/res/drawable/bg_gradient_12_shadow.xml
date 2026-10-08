@@ -1,0 +1,5 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- CSS: box-shadow 0 4px 12px rgba(0,0,0,.35) under the 38px playlist tile -->
+    <item android:drawable="@drawable/shadow_tile" />
+    <item android:drawable="@drawable/bg_gradient_12" />
+</layer-list>

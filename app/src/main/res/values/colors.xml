@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Surfaces (from the design: #0B0D16 screen, #141827 card, #1B2040 raised, #242A52 high) -->
+    <color name="color_background">#FF0B0D16</color>
+    <color name="color_background_deep">#FF05060C</color>
+    <color name="color_surface">#FF141827</color>
+    <color name="color_surface_raised">#FF1B2040</color>
+    <color name="color_surface_high">#FF242A52</color>
+    <color name="color_surface_input">#FF10131F</color>
+    <color name="color_nav">#FF161A2E</color>
+    <color name="color_nav_stroke">#FF2A3058</color>
+    <color name="color_nav_item">#FF7D86B5</color>
+    <color name="color_fab_glow">#33318CFF</color>
+    <color name="color_fab_glow_outer">#14318CFF</color>
+
+    <!-- Strokes -->
+    <color name="color_stroke">#FF30365D</color>
+    <color name="color_stroke_card">#FF262B4D</color>
+    <color name="color_stroke_row">#FF232845</color>
+    <color name="color_divider">#FF232845</color>
+    <color name="color_handle">#FF3A4170</color>
+
+    <!-- Brand -->
+    <color name="color_primary">#FF318CFF</color>
+    <color name="color_primary_dark">#FF6246FF</color>
+    <color name="color_gradient_start">#FF318CFF</color>
+    <color name="color_gradient_end">#FF6246FF</color>
+    <color name="color_on_primary">#FFFFFFFF</color>
+    <color name="color_accent_light">#FF7FB0FF</color>
+    <color name="color_accent_soft">#FF8DBBFF</color>
+    <color name="color_accent_tint">#29318CFF</color>
+
+    <!-- Text -->
+    <color name="color_text_primary">#FFFFFFFF</color>
+    <color name="color_text_soft">#FFC5C8D6</color>
+    <color name="color_text_secondary">#FFA1A5B5</color>
+    <color name="color_text_tertiary">#FF7D8299</color>
+    <color name="color_text_hint">#FF6F7590</color>
+
+    <!-- State -->
+    <color name="color_error">#FFFF5266</color>
+    <color name="color_error_soft">#FFFF7A8A</color>
+    <color name="color_error_tint">#14FF5266</color>
+    <color name="color_error_banner">#14FF5266</color>
+    <color name="color_error_border">#66FF5266</color>
+    <color name="color_success">#FF35C98A</color>
+    <color name="color_warning">#FFF5B83D</color>
+    <color name="color_live">#FFFF5266</color>
+
+    <!-- Overlays / thumbnails -->
+    <color name="color_scrim">#9E05060C</color>
+    <color name="color_scrim_dialog">#B305060C</color>
+    <color name="color_chip_dim">#BF0B0D16</color>
+    <color name="color_fav_circle">#9E0B0D16</color>
+    <color name="color_player_control">#730B0D16</color>
+    <color name="color_player_play">#2EFFFFFF</color>
+    <color name="color_player_play_stroke">#40FFFFFF</color>
+    <color name="color_thumb_start">#FF283063</color>
+    <color name="color_thumb_end">#FF171B36</color>
+    <color name="color_thumb_icon">#FFCFC8FF</color>
+    <color name="color_thumb_icon_bg">#386246FF</color>
+    <color name="color_shadow_nav">#15000000</color>
+    <color name="color_shadow_fab">#0F6246FF</color>
+    <color name="color_shadow_tile">#1A000000</color>
+    <color name="color_shadow_art_a">#15000000</color>
+    <color name="color_shadow_art_b">#18000000</color>
+    <color name="color_shadow_art_c">#15000000</color>
+    <color name="color_star_off">#FF4A5078</color>
+    <color name="color_success_tint">#2435C98A</color>
+    <color name="color_spinner">#FF6E8BFF</color>
+    <color name="color_spinner_track">#29FFFFFF</color>
+    <color name="color_spinner_track_white">#4DFFFFFF</color>
+    <color name="color_divider_card">#FF262B4D</color>
+    <color name="color_banner_fade_mid">#C7141827</color>
+    <color name="color_banner_fade_end">#26141827</color>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Plus Jakarta Sans 500 (from the design HTML): one variable font, wght axis pinned; API 26+ (older APIs use the file's default instance). -->
+<font-family xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <font
+        android:font="@font/plus_jakarta_sans_variable"
+        android:fontStyle="normal"
+        android:fontVariationSettings="'wght' 500"
+        android:fontWeight="500"
+        app:font="@font/plus_jakarta_sans_variable"
+        app:fontStyle="normal"
+        app:fontWeight="500"
+        tools:targetApi="26" />
+</font-family>

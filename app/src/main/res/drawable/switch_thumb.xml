@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <!-- 22 knob; the view centres it in the 28 high track, leaving the design's 3 margin -->
+    <solid android:color="@color/white" />
+    <size android:width="@dimen/_22sdp" android:height="@dimen/_22sdp" />
+</shape>

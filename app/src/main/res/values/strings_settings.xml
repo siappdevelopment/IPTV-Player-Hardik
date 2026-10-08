@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Settings sub-screens from the design: refresh, rate, share, about, privacy. -->
+<resources>
+    <string name="action_close">Close</string>
+    <string name="action_done">Done</string>
+
+    <!-- Refresh playlists -->
+    <string name="refresh_title_running">Refreshing playlists</string>
+    <string name="refresh_sub_running">Checking %1$d of %2$d…</string>
+    <string name="refresh_title_done">Playlists updated</string>
+    <plurals name="refresh_sub_done">
+        <item quantity="one">Your playlist is up to date.</item>
+        <item quantity="other">All %d playlists are up to date.</item>
+    </plurals>
+    <string name="refresh_title_issue">Some playlists failed</string>
+    <string name="refresh_sub_issue">%1$d updated, %2$d couldn’t be reached.</string>
+    <string name="refresh_title_empty">Nothing to refresh</string>
+    <string name="refresh_sub_empty">Add a playlist first.</string>
+    <string name="refresh_waiting">Waiting</string>
+    <string name="refresh_meta_updated">%d channels · updated</string>
+    <string name="refresh_meta_failed">Couldn’t update</string>
+    <string name="refresh_meta_file">%d channels · up to date</string>
+    <string name="refresh_meta_url">URL playlist</string>
+
+    <!-- Rate the app -->
+    <string name="rate_title">Enjoying IPTV Player?</string>
+    <string name="rate_sub">Your rating helps us improve the app.</string>
+    <string name="rate_feedback_hint">What could be better? (optional)</string>
+    <string name="rate_not_now">Not now</string>
+    <string name="rate_submit">Submit</string>
+    <string name="rate_cta_store">Rate on Play Store</string>
+    <string name="rate_cta_feedback">Send feedback</string>
+    <string name="rate_thanks_title">Thanks for your feedback</string>
+    <string name="rate_thanks_sub">We read every message and use it to plan updates.</string>
+    <string-array name="rate_labels">
+        <item>Tap a star to rate</item>
+        <item>Poor</item>
+        <item>Fair</item>
+        <item>Good</item>
+        <item>Very good</item>
+        <item>Excellent</item>
+    </string-array>
+    <plurals name="rate_star_description">
+        <item quantity="one">%d star</item>
+        <item quantity="other">%d stars</item>
+    </plurals>
+    <string name="rate_feedback_body">Rating: %d / 5</string>
+    <string name="toast_opening_store">Opening Play Store listing</string>
+    <string name="rate_feedback_subject">IPTV Player feedback</string>
+    <string name="rate_feedback_email" translatable="false">feedback@example.com</string>
+
+    <!-- Share the app -->
+    <string name="share_title">Share IPTV Player</string>
+    <string name="share_card_title">IPTV Player – Stream, Explore &amp; Enjoy</string>
+    <string name="share_copy_link">Copy link</string>
+    <string name="share_copied">Link copied</string>
+    <string name="share_messages">Messages</string>
+    <string name="share_email">Email</string>
+    <string name="share_bluetooth">Bluetooth</string>
+    <string name="share_more">More</string>
+    <string name="share_message_text">Check out IPTV Player: %s</string>
+
+    <!-- About -->
+    <string name="about_version">Version %1$s · Build %2$d</string>
+    <string name="about_short_version">v%s</string>
+    <string name="about_playlists">Playlists</string>
+    <string name="about_channels">Channels</string>
+    <string name="about_updates">Updates</string>
+    <string name="about_check_updates">Check for updates</string>
+    <string name="about_checking">Checking…</string>
+    <string name="about_status_not_checked">Not checked</string>
+    <string name="about_status_checking">Checking…</string>
+    <string name="about_status_up_to_date">Up to date</string>
+    <string name="about_status_available">Update available</string>
+    <string name="about_status_unknown">Open Play Store</string>
+
+    <!-- Privacy policy -->
+    <string name="privacy_title">Privacy Policy</string>
+    <string name="privacy_updated">Last updated 1 October 2026</string>
+    <string name="privacy_intro">IPTV Player is a media player. It doesn’t provide, host or sell any channels. You add your own playlists, and they stay on your device.</string>
+    <string-array name="privacy_titles">
+        <item>Information we collect</item>
+        <item>Your playlists and streams</item>
+        <item>Advertising</item>
+        <item>Diagnostics</item>
+        <item>Your choices</item>
+        <item>Contact</item>
+    </string-array>
+    <string-array name="privacy_bodies">
+        <item>We don’t ask for an account, name or email. The app stores your playlists, favorites, recent channels and settings locally on your device.</item>
+        <item>Playlist links and M3U files you add are read only to show channels. Streams are played directly from the source you provide. We don’t upload or share them.</item>
+        <item>This app shows no advertising and does not use a device advertising ID.</item>
+        <item>This app does not send crash reports or analytics. Nothing about your playlists or channels leaves your device.</item>
+        <item>Clear recent history in Settings, or uninstall the app to remove all stored data from your device.</item>
+        <item>Questions about privacy? Email privacy@example.com.</item>
+    </string-array>
+    <array name="privacy_icons">
+        <item>@drawable/ic_person</item>
+        <item>@drawable/ic_playlist_play</item>
+        <item>@drawable/ic_ads_click</item>
+        <item>@drawable/ic_analytics</item>
+        <item>@drawable/ic_tune</item>
+        <item>@drawable/ic_mail</item>
+    </array>
+</resources>

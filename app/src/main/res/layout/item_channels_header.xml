@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/_6sdp"
+    android:paddingTop="@dimen/spacing_sm"
+    android:paddingEnd="@dimen/_6sdp">
+
+    <!-- title + search -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/_0sdp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text.Display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/channels_title" />
+
+            <TextView
+                android:id="@+id/tvSubtitle"
+                style="@style/Text.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:textSize="@dimen/_13_5sdp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btnSearch"
+            style="@style/IconButton.Large"
+            android:contentDescription="@string/cd_search"
+            android:src="@drawable/ic_search" />
+    </LinearLayout>
+
+    <!-- continue watching -->
+    <LinearLayout
+        android:id="@+id/heroSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Text.Subtitle"
+                android:layout_width="@dimen/_0sdp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/continue_watching" />
+
+            <TextView
+                android:id="@+id/btnSeeAll"
+                style="@style/Button.Text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_32sdp"
+                android:minHeight="@dimen/_32sdp"
+                android:text="@string/section_see_all" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/hero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_md"
+            android:clickable="true"
+            android:focusable="true">
+
+            <com.iptvplayer.xtreamiptv.myiptvpro.ui.common.ChannelThumbView
+                android:id="@+id/heroThumb"
+                android:layout_width="@dimen/_0sdp"
+                android:layout_height="@dimen/_0sdp"
+                android:background="@drawable/bg_thumb_24"
+                app:layout_constraintDimensionRatio="16:9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:logoPadding="@dimen/_40sdp"
+                app:tileIconSize="@dimen/_48sdp"
+                app:tileSize="@dimen/_80sdp" />
+
+            <View
+                android:layout_width="@dimen/_0sdp"
+                android:layout_height="@dimen/_0sdp"
+                android:background="@drawable/bg_scrim_bottom"
+                app:layout_constraintBottom_toBottomOf="@id/heroThumb"
+                app:layout_constraintEnd_toEndOf="@id/heroThumb"
+                app:layout_constraintStart_toStartOf="@id/heroThumb"
+                app:layout_constraintTop_toTopOf="@id/heroThumb" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="@id/heroThumb"
+                app:layout_constraintTop_toTopOf="@id/heroThumb">
+
+                <TextView
+                    style="@style/Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_26sdp"
+                    android:background="@drawable/bg_badge"
+                    android:drawableStart="@drawable/bg_dot_live"
+                    android:drawablePadding="@dimen/_6sdp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:text="@string/label_live"
+                    android:textSize="@dimen/_12sdp"
+                    android:fontFamily="@font/plus_jakarta_sans_semibold" />
+
+                <TextView
+                    android:id="@+id/tvHeroQuality"
+                    style="@style/Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_26sdp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:background="@drawable/bg_badge"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:fontFamily="@font/plus_jakarta_sans_semibold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/_0sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@id/heroThumb"
+                app:layout_constraintEnd_toEndOf="@id/heroThumb"
+                app:layout_constraintStart_toStartOf="@id/heroThumb">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_0sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvHeroCategories"
+                        style="@style/Text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/color_text_soft"
+                        android:textSize="@dimen/_12_5sdp" />
+
+                    <TextView
+                        android:id="@+id/tvHeroName"
+                        style="@style/Text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_21sdp"
+                        android:fontFamily="@font/plus_jakarta_sans_semibold" />
+
+                    <TextView
+                        android:id="@+id/tvHeroWatched"
+                        style="@style/Text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:textColor="@color/color_accent_soft"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/_54sdp"
+                    android:layout_height="@dimen/_54sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:background="@drawable/bg_circle_white"
+                    android:importantForAccessibility="no"
+                    android:padding="@dimen/_11sdp"
+                    android:src="@drawable/ic_play_arrow"
+                    app:tint="@color/color_background" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <!-- category chips -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_minus6sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_minus6sdp"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:overScrollMode="never"
+        android:paddingStart="@dimen/_6sdp"
+        android:paddingEnd="@dimen/_6sdp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <!-- list title + view toggle -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/spacing_sm"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/_0sdp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvListTitle"
+                style="@style/Text.Subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/tvListCount"
+                style="@style/Text.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/viewToggle"
+            layout="@layout/view_view_toggle" />
+    </LinearLayout>
+
+    <!-- empty category -->
+    <LinearLayout
+        android:id="@+id/emptyCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_md"
+        android:background="@drawable/bg_dashed_empty"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingTop="@dimen/_28sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:paddingBottom="@dimen/_28sdp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_95sdp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_no_data" />
+
+        <TextView
+            style="@style/Text.BodyStrong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/channels_empty_title"
+            android:textSize="@dimen/_16sdp" />
+
+        <TextView
+            style="@style/Text.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:gravity="center"
+            android:text="@string/channels_empty_desc"
+            android:textSize="@dimen/_13_5sdp" />
+    </LinearLayout>
+</LinearLayout>

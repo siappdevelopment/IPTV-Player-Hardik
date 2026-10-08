@@ -1,0 +1,11 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- CSS: box-shadow 0 12px 32px rgba(0,0,0,.5) -->
+    <item android:drawable="@drawable/shadow_nav" />
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/color_nav" />
+            <corners android:radius="@dimen/_26sdp" />
+            <stroke android:width="@dimen/_1sdp" android:color="@color/color_nav_stroke" />
+        </shape>
+    </item>
+</layer-list>

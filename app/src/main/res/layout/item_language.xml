@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_68sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:background="@drawable/bg_row_select"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/_16sdp"
+    android:paddingEnd="@dimen/_16sdp">
+
+    <TextView
+        android:id="@+id/tvShort"
+        style="@style/Text"
+        android:layout_width="@dimen/_42sdp"
+        android:layout_height="@dimen/_42sdp"
+        android:background="@drawable/bg_lang_tile"
+        android:gravity="center"
+        android:letterSpacing="0.04"
+        android:textSize="@dimen/_13sdp"
+        android:fontFamily="@font/plus_jakarta_sans_semibold" />
+
+    <LinearLayout
+        android:layout_width="@dimen/_0sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvNative"
+            style="@style/Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/plus_jakarta_sans_semibold" />
+
+        <TextView
+            android:id="@+id/tvEnglish"
+            style="@style/Text.Label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivRadio"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/bg_radio" />
+</LinearLayout>

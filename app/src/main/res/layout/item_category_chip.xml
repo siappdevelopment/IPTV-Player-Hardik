@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Selected state (view.isSelected) propagates to the children: gradient background, white text. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/chip_height"
+    android:layout_marginEnd="@dimen/spacing_sm"
+    android:background="@drawable/bg_chip"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/_12sdp"
+    android:paddingEnd="@dimen/_10sdp">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="@dimen/_19sdp"
+        android:layout_height="@dimen/_19sdp"
+        android:importantForAccessibility="no"
+        app:tint="@color/selector_chip_text" />
+
+    <TextView
+        android:id="@+id/tvLabel"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:maxLines="1"
+        android:textColor="@color/selector_chip_text"
+        android:textSize="@dimen/_14sdp"
+        android:fontFamily="@font/plus_jakarta_sans_semibold" />
+
+    <TextView
+        android:id="@+id/tvCount"
+        style="@style/ChipCount"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_22sdp"
+        android:layout_marginStart="@dimen/_7sdp" />
+</LinearLayout>

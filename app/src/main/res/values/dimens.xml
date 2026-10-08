@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_padding">@dimen/_20sdp</dimen>
+    <dimen name="spacing_xs">@dimen/_4sdp</dimen>
+    <dimen name="spacing_sm">@dimen/_8sdp</dimen>
+    <dimen name="spacing_md">@dimen/_12sdp</dimen>
+    <dimen name="spacing_lg">@dimen/_16sdp</dimen>
+    <dimen name="spacing_xl">@dimen/_24sdp</dimen>
+
+    <dimen name="radius_card">@dimen/_22sdp</dimen>
+    <dimen name="radius_card_small">@dimen/_20sdp</dimen>
+    <dimen name="radius_row">@dimen/_18sdp</dimen>
+    <dimen name="radius_button">@dimen/_18sdp</dimen>
+    <dimen name="radius_input">@dimen/_16sdp</dimen>
+    <dimen name="radius_chip">@dimen/_14sdp</dimen>
+    <dimen name="radius_thumb">@dimen/_16sdp</dimen>
+    <dimen name="radius_sheet">@dimen/_28sdp</dimen>
+    <dimen name="radius_dialog">@dimen/_24sdp</dimen>
+
+    <dimen name="icon_sm">@dimen/_18sdp</dimen>
+    <dimen name="icon_md">@dimen/_22sdp</dimen>
+    <dimen name="icon_lg">@dimen/_26sdp</dimen>
+    <dimen name="touch_target">@dimen/_44sdp</dimen>
+    <dimen name="circle_button">@dimen/_52sdp</dimen>
+    <dimen name="back_button">@dimen/_44sdp</dimen>
+    <dimen name="chip_height">@dimen/_42sdp</dimen>
+    <dimen name="button_height">@dimen/_56sdp</dimen>
+    <dimen name="stroke_width">@dimen/_1sdp</dimen>
+
+    <dimen name="bottom_nav_height">@dimen/_68sdp</dimen>
+    <dimen name="bottom_nav_margin">@dimen/_16sdp</dimen>
+    <dimen name="bottom_nav_fab">@dimen/_66sdp</dimen>
+    <dimen name="list_bottom_padding">@dimen/_24sdp</dimen>
+    <dimen name="banner_height">@dimen/_178sdp</dimen>
+    <dimen name="row_thumb_width">@dimen/_104sdp</dimen>
+    <dimen name="row_thumb_height">@dimen/_60sdp</dimen>
+    <dimen name="player_row_thumb_width">@dimen/_76sdp</dimen>
+    <dimen name="player_row_thumb_height">@dimen/_44sdp</dimen>
+
+    <dimen name="text_display">@dimen/_28sdp</dimen>
+    <dimen name="text_headline">@dimen/_22sdp</dimen>
+    <dimen name="text_title">@dimen/_20sdp</dimen>
+    <dimen name="text_subtitle">@dimen/_17sdp</dimen>
+    <dimen name="text_body">@dimen/_15sdp</dimen>
+    <dimen name="text_body_small">@dimen/_14sdp</dimen>
+    <dimen name="text_label">@dimen/_13sdp</dimen>
+    <dimen name="text_caption">@dimen/_12sdp</dimen>
+    <dimen name="text_micro">@dimen/_10sdp</dimen>
+</resources>

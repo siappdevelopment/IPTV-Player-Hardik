@@ -1,0 +1,11 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- CSS: box-shadow 0 12px 28px rgba(0,0,0,.4) -->
+    <item android:drawable="@drawable/shadow_art_a" />
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/color_surface_raised" />
+            <corners android:radius="@dimen/_16sdp" />
+            <stroke android:width="@dimen/_1sdp" android:color="@color/color_stroke" />
+        </shape>
+    </item>
+</layer-list>

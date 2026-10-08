@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Text"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_38sdp"
+    android:background="@drawable/bg_chip"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center"
+    android:maxLines="1"
+    android:paddingStart="@dimen/_13sdp"
+    android:paddingEnd="@dimen/_13sdp"
+    android:textColor="@color/selector_chip_text"
+    android:textSize="@dimen/_13_5sdp"
+    android:fontFamily="@font/plus_jakarta_sans_semibold" />

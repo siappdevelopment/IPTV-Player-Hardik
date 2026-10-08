@@ -1,0 +1,5 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- CSS: box-shadow 0 18px 40px rgba(0,0,0,.5) around the 24px live-card -->
+    <item android:drawable="@drawable/shadow_art_b" />
+    <item android:drawable="@drawable/bg_tile_art_c_24" />
+</layer-list>

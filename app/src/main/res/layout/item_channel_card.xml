@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_6sdp"
+    android:layout_marginTop="@dimen/_7sdp"
+    android:layout_marginEnd="@dimen/_6sdp"
+    android:layout_marginBottom="@dimen/_7sdp"
+    android:background="@drawable/bg_card"
+    android:clickable="true"
+    android:focusable="true">
+
+    <com.iptvplayer.xtreamiptv.myiptvpro.ui.common.ChannelThumbView
+        android:id="@+id/thumb"
+        android:layout_width="@dimen/_0sdp"
+        android:layout_height="@dimen/_0sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@drawable/bg_thumb_16"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:logoPadding="@dimen/_24sdp"
+        app:showCaption="true"
+        app:tileIconSize="@dimen/_34sdp"
+        app:tileSize="@dimen/_64sdp" />
+
+    <LinearLayout
+        android:id="@+id/badges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/thumb"
+        app:layout_constraintTop_toTopOf="@id/thumb">
+
+        <TextView
+            style="@style/Text"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_26sdp"
+            android:background="@drawable/bg_badge"
+            android:drawableStart="@drawable/bg_dot_live"
+            android:drawablePadding="@dimen/_6sdp"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_9sdp"
+            android:paddingEnd="@dimen/_9sdp"
+            android:text="@string/label_live"
+            android:textSize="@dimen/_11_5sdp"
+            android:fontFamily="@font/plus_jakarta_sans_semibold" />
+
+        <TextView
+            android:id="@+id/tvQuality"
+            style="@style/Text"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_26sdp"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:background="@drawable/bg_badge"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_8sdp"
+            android:textSize="@dimen/_11_5sdp"
+            android:fontFamily="@font/plus_jakarta_sans_semibold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnFavorite"
+        android:layout_width="@dimen/_42sdp"
+        android:layout_height="@dimen/_42sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="@drawable/bg_circle_dim"
+        android:contentDescription="@string/cd_favorite"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/sel_favorite"
+        app:layout_constraintEnd_toEndOf="@id/thumb"
+        app:layout_constraintTop_toTopOf="@id/thumb"
+        app:tint="@color/selector_fav_tint" />
+
+    <TextView
+        android:id="@+id/tvCategories"
+        style="@style/Text"
+        android:layout_width="@dimen/_0sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/color_accent_soft"
+        android:textSize="@dimen/_12_5sdp"
+        android:fontFamily="@font/plus_jakarta_sans_semibold"
+        app:layout_constraintEnd_toStartOf="@id/btnMore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/thumb" />
+
+    <TextView
+        android:id="@+id/tvName"
+        style="@style/Text"
+        android:layout_width="@dimen/_0sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_14sdp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="@dimen/_18sdp"
+        android:fontFamily="@font/plus_jakarta_sans_semibold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnMore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCategories" />
+
+    <ImageView
+        android:id="@+id/btnMore"
+        android:layout_width="@dimen/_44sdp"
+        android:layout_height="@dimen/_44sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/bg_more_button"
+        android:contentDescription="@string/cd_more_actions"
+        android:padding="@dimen/_11sdp"
+        android:src="@drawable/ic_more_horiz"
+        app:layout_constraintBottom_toBottomOf="@id/tvName"
+        app:layout_constraintEnd_toStartOf="@id/btnExplore"
+        app:layout_constraintTop_toTopOf="@id/tvCategories"
+        app:tint="@color/color_text_soft" />
+
+    <TextView
+        android:id="@+id/btnExplore"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_44sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:background="@drawable/bg_explore_pill"
+        android:clickable="true"
+        android:drawableEnd="@drawable/ic_chevron_right"
+        android:drawableTint="@color/color_accent_light"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:text="@string/action_explore"
+        android:textSize="@dimen/_14sdp"
+        android:fontFamily="@font/plus_jakarta_sans_semibold"
+        app:layout_constraintBottom_toBottomOf="@id/btnMore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnMore" />
+</androidx.constraintlayout.widget.ConstraintLayout>

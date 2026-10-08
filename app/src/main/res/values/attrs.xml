@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ChannelThumbView">
+        <!-- Side of the rounded placeholder tile. -->
+        <attr name="tileSize" format="dimension" />
+        <!-- Side of the glyph inside the tile. -->
+        <attr name="tileIconSize" format="dimension" />
+        <!-- Show the "NO PREVIEW" caption under the tile. -->
+        <attr name="showCaption" format="boolean" />
+        <!-- Padding around the logo. -->
+        <attr name="logoPadding" format="dimension" />
+    </declare-styleable>
+</resources>

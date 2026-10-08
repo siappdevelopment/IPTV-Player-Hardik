@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Used by the player's channel list and by search results. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_72sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:background="@drawable/bg_row_select"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/_12sdp"
+    android:paddingEnd="@dimen/_6sdp">
+
+    <com.iptvplayer.xtreamiptv.myiptvpro.ui.common.ChannelThumbView
+        android:id="@+id/thumb"
+        android:layout_width="@dimen/player_row_thumb_width"
+        android:layout_height="@dimen/player_row_thumb_height"
+        android:background="@drawable/bg_thumb_11"
+        app:logoPadding="@dimen/_4sdp"
+        app:tileIconSize="@dimen/_22sdp"
+        app:tileSize="@dimen/_30sdp" />
+
+    <LinearLayout
+        android:layout_width="@dimen/_0sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/_15sdp"
+            android:fontFamily="@font/plus_jakarta_sans_semibold" />
+
+        <TextView
+            android:id="@+id/tvCategories"
+            style="@style/Text.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/_12_5sdp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivActive"
+        android:layout_width="@dimen/_22sdp"
+        android:layout_height="@dimen/_22sdp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_graphic_eq"
+        android:visibility="gone"
+        app:tint="@color/color_accent_light" />
+
+    <ImageView
+        android:id="@+id/btnFavorite"
+        style="@style/IconButton.Plain"
+        android:contentDescription="@string/cd_favorite"
+        android:padding="@dimen/_9sdp"
+        android:src="@drawable/sel_favorite"
+        app:tint="@color/selector_fav_tint" />
+</LinearLayout>

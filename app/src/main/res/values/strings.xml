@@ -1,0 +1,305 @@
+<resources>
+    <string name="app_name">IPTV Smart Player - Live TV</string>
+    <string name="brand_name">IPTV Player</string>
+    <string name="brand_tagline">Stream, Explore &amp; Enjoy</string>
+    <string name="splash_loading">Loading your library</string>
+
+    <!-- Generic actions -->
+    <string name="action_cancel">Cancel</string>
+    <string name="action_save">Save</string>
+    <string name="action_save_changes">Save Changes</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_retry">Retry</string>
+    <string name="action_continue">Continue</string>
+    <string name="action_skip">Skip</string>
+    <string name="action_next">Next</string>
+    <string name="action_get_started">Get Started</string>
+    <string name="label_live">LIVE</string>
+    <string name="section_see_all">See all</string>
+
+    <!-- Language -->
+    <string name="language_title">Select Language</string>
+    <string name="language_subtitle">Choose your preferred app language.</string>
+    <string name="language_search_hint">Search language</string>
+
+    <!-- Onboarding -->
+    <string name="onb_1_title">All Your Playlists, One Place</string>
+    <string name="onb_1_sub">Organize and manage your IPTV playlists with ease.</string>
+    <string name="onb_2_title">Add Playlists Your Way</string>
+    <string name="onb_2_sub">Import a playlist using a URL or M3U file.</string>
+    <string name="onb_3_title">Explore Your Live Channels</string>
+    <string name="onb_3_sub">Browse channels by category and find what you want to watch.</string>
+    <string name="onb_4_title">Keep Your Favorites Close</string>
+    <string name="onb_4_sub">Save favorite channels and quickly return to recently watched content.</string>
+    <string name="onb_art_playlist">Playlist</string>
+    <string name="onb_art_url_label">M3U playlist URL</string>
+    <string name="onb_art_url_value">https://example.com/playlist.m3u</string>
+    <string name="onb_art_url_ok">Valid playlist link</string>
+    <string name="onb_art_file_name">my_channels.m3u</string>
+    <string name="onb_art_file_meta">M3U file · ready to import</string>
+    <string name="onb_art_live_channel">Live channel</string>
+    <string name="onb_art_recent">RECENTLY WATCHED</string>
+
+    <string name="onb_art_cat_family">Family</string>
+    <string name="onb_art_cat_movies">Movies</string>
+    <string name="onb_art_cat_sports">Sports</string>
+    <string name="onb_art_cat_entertainment">Entertainment</string>
+    <string name="onb_art_documentary">Documentary</string>
+    <string name="onb_art_channel_nature">Nature Channel</string>
+    <string name="onb_art_channel_kids">Kids Channel</string>
+    <string name="onb_art_channel_movie">Movie Channel</string>
+    <string name="onb_art_channel_one">Channel One</string>
+    <string name="onb_art_channel_two">Channel Two</string>
+    <string name="onb_art_time_a">5m ago</string>
+    <string name="onb_art_time_b">2h ago</string>
+    <string name="onb_art_channel_meta">Documentary · 1080p</string>
+    <string name="onb_art_count_a">7 channels</string>
+    <string name="onb_art_count_b">3 channels</string>
+    <string name="onb_art_count_c">6 channels</string>
+    <!-- Tabs -->
+    <string name="tab_playlist">Playlist</string>
+    <string name="tab_channel">Channel</string>
+    <string name="tab_recent">Recent</string>
+    <string name="tab_favorite">Favorite</string>
+
+    <!-- Playlist home -->
+    <string name="home_search_hint">Search your channel</string>
+    <string name="banner_badge">LIVE TV</string>
+    <string name="banner_title">IPTV Playlist</string>
+    <string name="banner_stats">%1$s · %2$s</string>
+    <string name="home_your_playlists">Your playlists</string>
+    <string name="filter_all">All</string>
+    <string name="filter_url">URL</string>
+    <string name="filter_file">File</string>
+    <string name="source_url">URL</string>
+    <string name="source_file">M3U file</string>
+    <string name="source_imported_url">Imported from URL</string>
+    <string name="source_imported_file">M3U file</string>
+    <plurals name="playlist_count">
+        <item quantity="one">%d playlist</item>
+        <item quantity="other">%d playlists</item>
+    </plurals>
+    <plurals name="channel_count">
+        <item quantity="one">%d channel</item>
+        <item quantity="other">%d channels</item>
+    </plurals>
+    <plurals name="saved_channel_count">
+        <item quantity="one">%d saved channel</item>
+        <item quantity="other">%d saved channels</item>
+    </plurals>
+    <string name="seeding_title">Setting up your playlists</string>
+    <string name="seeding_desc">Family, Entertainment, Movies, Sport and Lifestyle are on their way.</string>
+    <string name="empty_playlist_title">No Playlists Yet</string>
+    <string name="empty_playlist_desc">Add your first playlist to start exploring channels.</string>
+    <string name="empty_playlist_cta">Add New Playlist</string>
+    <string name="empty_playlist_import_url">Import URL</string>
+    <string name="empty_playlist_upload">Upload M3U</string>
+    <string name="empty_filter_title">No %1$s playlists</string>
+    <string name="empty_filter_desc">Playlists you add this way will appear here.</string>
+    <string name="filter_name_url">URL</string>
+    <string name="filter_name_file">file</string>
+
+    <!-- Channel home -->
+    <string name="channels_title">Channels</string>
+    <string name="channels_subtitle">%1$s across %2$s</string>
+    <string name="continue_watching">Continue watching</string>
+    <string name="channels_list_all">All channels</string>
+    <string name="action_explore">Explore</string>
+    <string name="channels_empty_title">No channels here</string>
+    <string name="channels_empty_desc">Add a playlist to fill this category.</string>
+    <string name="category_all">All</string>
+
+    <!-- Recent / favorites -->
+    <string name="recent_title">Recent Channels</string>
+    <string name="recent_empty_title">No Recent Channels</string>
+    <string name="recent_empty_desc">Channels you watch will appear here.</string>
+    <string name="recent_empty_cta">Explore channels</string>
+    <string name="favorites_title">Favorite Channels</string>
+    <string name="favorites_empty_title">No Favorites Yet</string>
+    <string name="favorites_empty_desc">Save your favorite channels for quick access.</string>
+    <string name="favorites_empty_cta">Browse channels</string>
+    <string name="watched_ago">Watched %s</string>
+    <string name="time_just_now">just now</string>
+    <string name="time_minutes_ago">%dm ago</string>
+    <string name="time_hours_ago">%dh ago</string>
+    <string name="time_yesterday">Yesterday</string>
+    <string name="time_days_ago">%dd ago</string>
+
+    <!-- Add playlist -->
+    <string name="add_title">Add Playlist</string>
+    <string name="add_subtitle">Import a link or upload an M3U file</string>
+    <string name="tab_import_url">Import URL</string>
+    <string name="tab_upload_file">Upload File</string>
+    <string name="label_playlist_name">Playlist name</string>
+    <string name="hint_playlist_name">e.g. Family channels</string>
+    <string name="label_m3u_url">M3U playlist URL</string>
+    <string name="hint_m3u_url">https://example.com/playlist.m3u</string>
+    <string name="add_url_hint">Supports M3U and M3U8 playlist links.</string>
+    <string name="add_suggested">Suggested playlists</string>
+    <string name="add_suggested_source">Public lists · iptv-org</string>
+    <string name="label_m3u_file">M3U file</string>
+    <string name="choose_m3u_file">Choose M3U File</string>
+    <string name="choose_m3u_hint">.m3u or .m3u8 · up to 20 MB</string>
+    <string name="choose_different_file">Choose a different file</string>
+    <string name="file_ready">Ready to import</string>
+    <string name="action_add_playlist">Add Playlist</string>
+    <string name="suggestion_comedy">Comedy</string>
+    <string name="suggestion_lifestyle">Lifestyle</string>
+    <string name="suggestion_movies">Movies</string>
+    <string name="suggestion_sports">Sports</string>
+    <string name="add_loading_title">Loading playlist</string>
+    <string name="add_loading_desc">Validating the source and reading channels for “%s”</string>
+    <string name="add_error_title">Couldn’t load playlist</string>
+    <string name="add_error_desc">Check your connection or the link, then try again.</string>
+    <string name="add_error_empty">The playlist contains no channels.</string>
+    <string name="add_error_file">Couldn’t read the selected file.</string>
+    <string name="add_error_invalid">That isn’t an M3U playlist.</string>
+    <string name="add_error_timeout">The server took too long to respond. Try again later.</string>
+    <string name="add_error_big">The playlist is too large to import.</string>
+    <string name="err_name_required">Enter a playlist name</string>
+    <string name="err_url_required">Enter a playlist link</string>
+    <string name="err_url_invalid">Enter a valid https link</string>
+    <string name="err_file_required">Choose an M3U file</string>
+    <string name="err_file_big">That file is larger than 20 MB</string>
+
+    <!-- Messages (toasts) -->
+    <string name="toast_playlist_added">Playlist added · %s</string>
+    <string name="toast_fav_added">Added to favorites</string>
+    <string name="toast_fav_removed">Removed from favorites</string>
+    <string name="toast_channel_added">Channel added</string>
+    <string name="toast_channel_updated">Channel updated</string>
+    <string name="toast_channel_deleted">Channel deleted</string>
+    <string name="toast_playlist_renamed">Playlist renamed</string>
+    <string name="toast_playlist_deleted">Playlist deleted</string>
+    <string name="toast_recent_removed">Removed from recent</string>
+    <string name="toast_history_cleared">Recent history cleared</string>
+    <string name="toast_playlists_refreshed">Playlists refreshed</string>
+    <string name="toast_refresh_partial">Refreshed %1$d, %2$d failed</string>
+    <string name="toast_refresh_none">No link playlists to refresh</string>
+    <string name="toast_language_set">Language set to %s</string>
+    <string name="toast_no_internet">No internet connection</string>
+    <string name="toast_no_app">No app available to open this</string>
+    <string name="toast_add_playlist_first">Add a playlist first</string>
+
+    <!-- Playlist details -->
+    <string name="details_channels">Channels</string>
+    <string name="details_subtitle">%1$s · %2$s</string>
+    <string name="details_empty_title">No channels yet</string>
+    <string name="details_empty_desc">Add a channel to this playlist to start watching.</string>
+    <string name="details_empty_cta">Add Channel</string>
+
+    <!-- Sheets / dialogs -->
+    <string name="sheet_add_title">Add to your library</string>
+    <string name="sheet_add_playlist">Add Playlist</string>
+    <string name="sheet_add_playlist_desc">Import a URL or upload an M3U file</string>
+    <string name="sheet_add_channel">Add Channel</string>
+    <string name="sheet_add_channel_desc">Add a single stream by URL</string>
+    <string name="action_add_favorite">Add to favorites</string>
+    <string name="action_remove_favorite">Remove from favorites</string>
+    <string name="action_edit_channel">Edit channel</string>
+    <string name="action_delete_channel">Delete channel</string>
+    <string name="action_remove_recent">Remove from recent</string>
+    <string name="form_add_channel_title">Add Channel</string>
+    <string name="form_edit_channel_title">Edit Channel</string>
+    <string name="form_channel_name">Channel name</string>
+    <string name="form_channel_name_hint">e.g. Harbor One HD</string>
+    <string name="form_stream_url">Stream URL</string>
+    <string name="form_stream_url_hint">https://…/stream.m3u8</string>
+    <string name="form_category">Category</string>
+    <string name="form_add_to_playlist">Add to playlist</string>
+    <string name="form_logo">Channel logo</string>
+    <string name="form_optional">· optional</string>
+    <string name="form_choose_image">Choose image</string>
+    <string name="form_remove">Remove</string>
+    <string name="form_save_channel">Save Channel</string>
+    <string name="err_channel_name">Enter a channel name</string>
+    <string name="err_stream_url">Enter a stream URL</string>
+    <string name="err_stream_url_invalid">Enter a valid stream URL (http, https or rtsp)</string>
+    <string name="edit_playlist_title">Edit Playlist</string>
+    <string name="dialog_delete_channel_title">Delete Channel?</string>
+    <string name="dialog_delete_channel_desc">Are you sure you want to remove “%s”? This can’t be undone.</string>
+    <string name="dialog_delete_playlist_title">Delete Playlist?</string>
+    <string name="dialog_delete_playlist_desc">Are you sure you want to remove “%s” from your library?</string>
+    <string name="dialog_clear_history_title">Clear recent history?</string>
+    <string name="dialog_clear_history_desc">All channels will be removed from Recent.</string>
+
+    <!-- Player -->
+    <plurals name="player_counter">
+        <item quantity="one">%1$d / %2$d channel</item>
+        <item quantity="other">%1$d / %2$d channels</item>
+    </plurals>
+    <string name="player_in_list">In %s</string>
+    <string name="player_status_live">Live</string>
+    <string name="player_status_paused">Paused</string>
+    <string name="player_status_offline">Offline</string>
+    <string name="player_status_connecting">Connecting</string>
+    <string name="player_connecting">Connecting to stream…</string>
+    <string name="player_buffering">Buffering…</string>
+    <string name="player_error_unavailable_title">Stream unavailable</string>
+    <string name="player_error_unavailable_desc">This channel isn’t broadcasting right now. Try again later or switch channel.</string>
+    <string name="player_error_network_title">Network error</string>
+    <string name="player_error_network_desc">Check your internet connection and try again.</string>
+    <string name="player_tap_unlock">Tap to unlock</string>
+    <string name="player_favorite">Favorite</string>
+    <string name="player_saved">Saved</string>
+    <string name="player_exit_fullscreen">Exit fullscreen</string>
+
+    <!-- Search -->
+    <string name="search_hint">Search channels or categories</string>
+    <string name="search_scope">Searching in %s</string>
+    <string name="search_scope_all">All channels</string>
+    <string name="search_scope_recent">Recent</string>
+    <string name="search_scope_favorites">Favorites</string>
+    <string name="search_try_category">Try a category</string>
+    <plurals name="search_result_count">
+        <item quantity="one">%d result</item>
+        <item quantity="other">%d results</item>
+    </plurals>
+    <string name="search_playlist_result">Playlist · %s</string>
+    <string name="search_no_results_title">No results for “%s”</string>
+    <string name="search_no_results_desc">Check the spelling or try a category like Sports.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_section_general">GENERAL</string>
+    <string name="settings_section_playback">PLAYBACK</string>
+    <string name="settings_section_playlists">PLAYLIST MANAGEMENT</string>
+    <string name="settings_section_about">ABOUT</string>
+    <string name="settings_language">App language</string>
+    <string name="settings_resume">Resume last channel</string>
+    <string name="settings_hardware">Hardware decoding</string>
+    <string name="settings_manage_playlists">Manage playlists</string>
+    <string name="settings_refresh_playlists">Refresh playlists</string>
+    <string name="settings_clear_history">Clear recent history</string>
+    <string name="settings_privacy">Privacy policy</string>
+    <string name="settings_rate">Rate the app</string>
+    <string name="settings_about">About</string>
+    <string name="settings_share">Share the app</string>
+    <!-- TODO before release: replace with the real privacy policy page. -->
+    <string name="privacy_policy_url" translatable="false">https://example.com/privacy</string>
+
+    <!-- Content descriptions -->
+    <string name="thumb_no_preview">NO PREVIEW</string>
+    <string name="cd_back">Back</string>
+    <string name="cd_search">Search</string>
+    <string name="cd_clear">Clear</string>
+    <string name="cd_settings">Settings</string>
+    <string name="cd_add">Add</string>
+    <string name="cd_edit_playlist">Edit playlist</string>
+    <string name="cd_delete_playlist">Delete playlist</string>
+    <string name="cd_more_actions">More actions</string>
+    <string name="cd_favorite">Favorite</string>
+    <string name="cd_logo">Channel logo</string>
+    <string name="cd_play_pause">Play or pause</string>
+    <string name="cd_previous">Previous channel</string>
+    <string name="cd_next">Next channel</string>
+    <string name="cd_lock">Lock controls</string>
+    <string name="cd_unlock">Unlock controls</string>
+    <string name="cd_fullscreen">Fullscreen</string>
+    <string name="cd_view_cards">Large cards</string>
+    <string name="cd_view_grid">Grid view</string>
+    <string name="cd_view_list">List view</string>
+    <string name="cd_remove_file">Remove file</string>
+    <string name="cd_player_toggle_controls">Show or hide player controls</string>
+</resources>

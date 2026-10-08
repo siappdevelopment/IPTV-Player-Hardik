@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Design onboarding 01 (art area 393 x 470): TV grid + four floating category cards. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <!-- TV: left 46, top 132, 300 x 176, 6 border, 3 gaps -->
+    <LinearLayout
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_176sdp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="@dimen/_132sdp"
+        android:background="@drawable/bg_tv_frame"
+        android:orientation="vertical"
+        android:padding="@dimen/_6sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_0sdp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView android:layout_width="@dimen/_0sdp" android:layout_height="match_parent" android:layout_weight="1" android:importantForAccessibility="no" android:scaleType="centerCrop" android:src="@drawable/art_photo_1074" />
+            <ImageView android:layout_width="@dimen/_0sdp" android:layout_height="match_parent" android:layout_marginStart="@dimen/_3sdp" android:layout_weight="1" android:importantForAccessibility="no" android:scaleType="centerCrop" android:src="@drawable/art_photo_1069" />
+            <ImageView android:layout_width="@dimen/_0sdp" android:layout_height="match_parent" android:layout_marginStart="@dimen/_3sdp" android:layout_weight="1" android:importantForAccessibility="no" android:scaleType="centerCrop" android:src="@drawable/art_photo_292" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_0sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView android:layout_width="@dimen/_0sdp" android:layout_height="match_parent" android:layout_weight="1" android:importantForAccessibility="no" android:scaleType="centerCrop" android:src="@drawable/art_photo_1036" />
+            <ImageView android:layout_width="@dimen/_0sdp" android:layout_height="match_parent" android:layout_marginStart="@dimen/_3sdp" android:layout_weight="1" android:importantForAccessibility="no" android:scaleType="centerCrop" android:src="@drawable/art_photo_1025" />
+            <ImageView android:layout_width="@dimen/_0sdp" android:layout_height="match_parent" android:layout_marginStart="@dimen/_3sdp" android:layout_weight="1" android:importantForAccessibility="no" android:scaleType="centerCrop" android:src="@drawable/art_photo_133" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- TV stand: left 166, top 314, 60 x 6 -->
+    <View
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_6sdp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="@dimen/_314sdp"
+        android:background="@drawable/bg_progress_track" />
+
+    <!-- Family: left 18, top 76 -->
+    <LinearLayout
+        style="@style/OnbFloatCard"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_76sdp">
+
+        <ImageView style="@style/OnbFloatIcon" android:src="@drawable/ic_family_restroom" />
+
+        <LinearLayout style="@style/OnbFloatTexts">
+
+            <TextView style="@style/OnbFloatName" android:text="@string/onb_art_cat_family" />
+
+            <TextView style="@style/OnbFloatCount" android:text="@string/onb_art_count_a" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Movies: right 18, top 92 -->
+    <LinearLayout
+        style="@style/OnbFloatCard"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="@dimen/_92sdp"
+        android:layout_marginEnd="@dimen/_18sdp">
+
+        <ImageView style="@style/OnbFloatIcon" android:src="@drawable/ic_movie" />
+
+        <LinearLayout style="@style/OnbFloatTexts">
+
+            <TextView style="@style/OnbFloatName" android:text="@string/onb_art_cat_movies" />
+
+            <TextView style="@style/OnbFloatCount" android:text="@string/onb_art_count_b" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Sports: left 28, top 338 -->
+    <LinearLayout
+        style="@style/OnbFloatCard"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="@dimen/_28sdp"
+        android:layout_marginTop="@dimen/_338sdp">
+
+        <ImageView style="@style/OnbFloatIcon" android:src="@drawable/ic_sports_soccer" />
+
+        <LinearLayout style="@style/OnbFloatTexts">
+
+            <TextView style="@style/OnbFloatName" android:text="@string/onb_art_cat_sports" />
+
+            <TextView style="@style/OnbFloatCount" android:text="@string/onb_art_count_b" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Entertainment: right 24, top 356 -->
+    <LinearLayout
+        style="@style/OnbFloatCard"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="@dimen/_356sdp"
+        android:layout_marginEnd="@dimen/_24sdp">
+
+        <ImageView style="@style/OnbFloatIcon" android:src="@drawable/ic_theaters" />
+
+        <LinearLayout style="@style/OnbFloatTexts">
+
+            <TextView style="@style/OnbFloatName" android:text="@string/onb_art_cat_entertainment" />
+
+            <TextView style="@style/OnbFloatCount" android:text="@string/onb_art_count_c" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Design share target: 56 tile (r18, 1 border), 26 glyph, 12.5 label 8 below. Four equal columns (1fr, 8 gap). -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_0sdp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="@drawable/bg_ripple_rect"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_6sdp"
+    android:paddingBottom="@dimen/_6sdp">
+
+    <FrameLayout
+        android:layout_width="@dimen/_56sdp"
+        android:layout_height="@dimen/_56sdp"
+        android:background="@drawable/bg_share_target">
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
+            android:layout_gravity="center"
+            android:importantForAccessibility="no"
+            app:tint="@color/color_text_soft" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvLabel"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textColor="@color/color_text_soft"
+        android:textSize="@dimen/_12_5sdp" />
+</LinearLayout>

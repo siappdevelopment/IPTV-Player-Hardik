@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Design onboarding 04 (art area 393 x 470): two favourite cards and the recently-watched list. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <!-- card 1: left 24, top 64, 165 wide -->
+    <LinearLayout
+        android:layout_width="@dimen/_165sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_64sdp"
+        android:background="@drawable/bg_art_card_small"
+        android:orientation="vertical"
+        android:padding="@dimen/_6sdp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_85sdp"
+            android:background="@drawable/bg_tile_art_a_14">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_tile_art_a_14"
+                android:clipToOutline="true"
+                android:importantForAccessibility="no"
+                android:scaleType="centerCrop"
+                android:src="@drawable/art_photo_1025" />
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="top|end"
+                android:layout_margin="@dimen/_6sdp"
+                android:background="@drawable/bg_circle_dim"
+                android:importantForAccessibility="no"
+                android:padding="@dimen/_6_5sdp"
+                android:src="@drawable/ic_favorite"
+                app:tint="@color/color_error" />
+        </FrameLayout>
+
+        <TextView
+            style="@style/Text.Semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="@string/onb_art_channel_kids"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            style="@style/Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:text="@string/onb_art_cat_family"
+            android:textColor="@color/color_text_secondary"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+
+    <!-- card 2: left 204, top 92, 165 wide -->
+    <LinearLayout
+        android:layout_width="@dimen/_165sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="@dimen/_204sdp"
+        android:layout_marginTop="@dimen/_92sdp"
+        android:background="@drawable/bg_art_card_small"
+        android:orientation="vertical"
+        android:padding="@dimen/_6sdp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_85sdp"
+            android:background="@drawable/bg_tile_art_b_14">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_tile_art_b_14"
+                android:clipToOutline="true"
+                android:importantForAccessibility="no"
+                android:scaleType="centerCrop"
+                android:src="@drawable/art_photo_1018" />
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="top|end"
+                android:layout_margin="@dimen/_6sdp"
+                android:background="@drawable/bg_circle_dim"
+                android:importantForAccessibility="no"
+                android:padding="@dimen/_6_5sdp"
+                android:src="@drawable/ic_favorite"
+                app:tint="@color/color_error" />
+        </FrameLayout>
+
+        <TextView
+            style="@style/Text.Semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="@string/onb_art_channel_movie"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            style="@style/Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:text="@string/onb_art_cat_movies"
+            android:textColor="@color/color_text_secondary"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+
+    <!-- recently watched: left 24, top 290, 345 wide, 10 gaps -->
+    <LinearLayout
+        android:layout_width="@dimen/_345sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="@dimen/_290sdp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Text.Semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.04"
+            android:text="@string/onb_art_recent"
+            android:textColor="@color/color_text_secondary"
+            android:textSize="@dimen/_12sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/bg_row_card"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_12sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_64sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:background="@drawable/bg_tile_art_c_9"
+                android:clipToOutline="true"
+                android:importantForAccessibility="no"
+                android:scaleType="centerCrop"
+                android:src="@drawable/art_photo_1043" />
+
+            <TextView
+                style="@style/Text.Semibold"
+                android:layout_width="@dimen/_0sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_weight="1"
+                android:text="@string/onb_art_channel_one"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                style="@style/Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/onb_art_time_a"
+                android:textColor="@color/color_accent_light"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/bg_row_card"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_12sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_64sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:background="@drawable/bg_tile_art_a_9"
+                android:clipToOutline="true"
+                android:importantForAccessibility="no"
+                android:scaleType="centerCrop"
+                android:src="@drawable/art_photo_1015" />
+
+            <TextView
+                style="@style/Text.Semibold"
+                android:layout_width="@dimen/_0sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_weight="1"
+                android:text="@string/onb_art_channel_two"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                style="@style/Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/onb_art_time_b"
+                android:textColor="@color/color_accent_light"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

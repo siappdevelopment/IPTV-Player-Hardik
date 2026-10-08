@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Design onboarding 03 (art area 393 x 470): live card, category chips, now-playing row. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <!-- live card: left 24, top 64, 345 x 194, r24 -->
+    <FrameLayout
+        android:layout_width="@dimen/_345sdp"
+        android:layout_height="@dimen/_194sdp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="@dimen/_64sdp"
+        android:background="@drawable/bg_art_photo_24">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_tile_art_c_24"
+            android:clipToOutline="true"
+            android:importantForAccessibility="no"
+            android:scaleType="centerCrop"
+            android:src="@drawable/art_photo_1074" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_scrim_bottom_24" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_26sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/bg_badge"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp">
+
+            <View
+                android:layout_width="@dimen/_7sdp"
+                android:layout_height="@dimen/_7sdp"
+                android:background="@drawable/bg_dot_live" />
+
+            <TextView
+                style="@style/Text.Semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:text="@string/label_live"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_14sdp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/onb_art_documentary"
+                android:textColor="@color/color_text_soft"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                style="@style/Text.Semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="@string/onb_art_channel_nature"
+                android:textSize="@dimen/_18sdp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- chips: left 24, top 282, 8 apart -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_282sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Text.Semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_38sdp"
+            android:background="@drawable/bg_gradient_14"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_14sdp"
+            android:paddingEnd="@dimen/_14sdp"
+            android:text="@string/onb_art_cat_entertainment"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            style="@style/Text.Semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:background="@drawable/bg_chip_off"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_14sdp"
+            android:paddingEnd="@dimen/_14sdp"
+            android:text="@string/onb_art_cat_family"
+            android:textColor="@color/color_text_secondary"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            style="@style/Text.Semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:background="@drawable/bg_chip_off"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_14sdp"
+            android:paddingEnd="@dimen/_14sdp"
+            android:text="@string/onb_art_cat_sports"
+            android:textColor="@color/color_text_secondary"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            style="@style/Text.Semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:background="@drawable/bg_chip_off"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_14sdp"
+            android:paddingEnd="@dimen/_14sdp"
+            android:text="@string/onb_art_cat_movies"
+            android:textColor="@color/color_text_secondary"
+            android:textSize="@dimen/_13sdp" />
+    </LinearLayout>
+
+    <!-- now playing row: left 24, top 340, 345 x 72 -->
+    <LinearLayout
+        android:layout_width="@dimen/_345sdp"
+        android:layout_height="@dimen/_72sdp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="@dimen/_340sdp"
+        android:background="@drawable/bg_row_active_base"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_14sdp"
+        android:paddingEnd="@dimen/_14sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_72sdp"
+            android:layout_height="@dimen/_44sdp"
+            android:background="@drawable/bg_tile_art_b_10"
+            android:clipToOutline="true"
+            android:importantForAccessibility="no"
+            android:scaleType="centerCrop"
+            android:src="@drawable/art_photo_1069" />
+
+        <LinearLayout
+            android:layout_width="@dimen/_0sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text.Semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/onb_art_channel_one"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                style="@style/Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="@string/onb_art_channel_meta"
+                android:textColor="@color/color_text_secondary"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_graphic_eq"
+            app:tint="@color/color_accent_light" />
+    </LinearLayout>
+</FrameLayout>

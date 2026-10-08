@@ -1,0 +1,19 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:enterFadeDuration="@android:integer/config_shortAnimTime"
+    android:exitFadeDuration="@android:integer/config_shortAnimTime">
+    <!-- Design toggle: 48 x 28 pill, primary blue on / stroke grey off -->
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/color_primary" />
+            <corners android:radius="@dimen/_14sdp" />
+            <size android:width="@dimen/_48sdp" android:height="@dimen/_28sdp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/color_stroke" />
+            <corners android:radius="@dimen/_14sdp" />
+            <size android:width="@dimen/_48sdp" android:height="@dimen/_28sdp" />
+        </shape>
+    </item>
+</selector>

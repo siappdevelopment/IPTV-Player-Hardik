@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_18sdp"
+    android:paddingBottom="@dimen/spacing_sm">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/_0sdp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:letterSpacing="-0.01"
+                android:maxLines="1"
+                android:textSize="@dimen/_22sdp"
+                android:fontFamily="@font/plus_jakarta_sans_semibold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvStatus"
+                    style="@style/Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_24sdp"
+                    android:background="@drawable/bg_status_chip"
+                    android:drawableStart="@drawable/bg_dot_status"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:textSize="@dimen/_11_5sdp"
+                    android:fontFamily="@font/plus_jakarta_sans_semibold" />
+
+                <TextView
+                    android:id="@+id/tvQuality"
+                    style="@style/Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:background="@drawable/bg_status_chip"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:textSize="@dimen/_11_5sdp"
+                    android:fontFamily="@font/plus_jakarta_sans_semibold" />
+
+                <TextView
+                    android:id="@+id/tvCategories"
+                    style="@style/Text.Label"
+                    android:layout_width="@dimen/_0sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.iptvplayer.xtreamiptv.myiptvpro.ui.common.IconTextView
+            android:id="@+id/btnFavorite"
+            style="@style/Text"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:background="@drawable/bg_search_pill_button_14"
+            android:clickable="true"
+            android:drawableStart="@drawable/sel_favorite"
+            android:drawablePadding="@dimen/_6sdp"
+            android:drawableTint="@color/selector_fav_tint"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_14sdp"
+            android:paddingEnd="@dimen/_14sdp"
+            android:textSize="@dimen/_14sdp"
+            android:fontFamily="@font/plus_jakarta_sans_semibold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvListTitle"
+            style="@style/Text.Subtitle"
+            android:layout_width="@dimen/_0sdp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/tvListCount"
+            style="@style/Text.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

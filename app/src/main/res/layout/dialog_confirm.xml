@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog"
+    android:orientation="vertical"
+    android:padding="@dimen/_24sdp">
+
+    <ImageView
+        android:layout_width="@dimen/_52sdp"
+        android:layout_height="@dimen/_52sdp"
+        android:background="@drawable/bg_tile_error_18"
+        android:importantForAccessibility="no"
+        android:padding="@dimen/_12sdp"
+        android:src="@drawable/ic_delete"
+        app:tint="@color/color_error" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/Text.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp" />
+
+    <TextView
+        android:id="@+id/tvDesc"
+        style="@style/Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/color_text_secondary"
+        android:textSize="@dimen/_14_5sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btnCancel"
+            style="@style/Button.Secondary"
+            android:layout_width="@dimen/_0sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_weight="1"
+            android:minHeight="@dimen/_52sdp"
+            android:text="@string/action_cancel" />
+
+        <TextView
+            android:id="@+id/btnConfirm"
+            style="@style/Button.Danger"
+            android:layout_width="@dimen/_0sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:minHeight="@dimen/_52sdp" />
+    </LinearLayout>
+</LinearLayout>

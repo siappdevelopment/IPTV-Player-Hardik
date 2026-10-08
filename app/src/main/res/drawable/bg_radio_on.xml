@@ -1,0 +1,8 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval"><solid android:color="@color/transparent" /><stroke android:width="@dimen/_2sdp" android:color="@color/color_primary" /><size android:width="@dimen/_24sdp" android:height="@dimen/_24sdp" /></shape>
+    </item>
+    <item android:top="@dimen/_6sdp" android:left="@dimen/_6sdp" android:right="@dimen/_6sdp" android:bottom="@dimen/_6sdp">
+        <shape android:shape="oval"><solid android:color="@color/color_primary" /></shape>
+    </item>
+</layer-list>

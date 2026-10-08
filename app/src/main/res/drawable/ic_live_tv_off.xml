@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Figma asset (frame16.svg): glyph 20 x 18 in a 24px icon box -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="@dimen/_24sdp"
+    android:height="@dimen/_24sdp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <group android:translateX="2" android:translateY="3" android:scaleX="1" android:scaleY="1">
+        <path android:fillColor="@android:color/white" android:pathData="M9.05 11.5L13.2 8.85C13.5 8.65 13.65 8.36667 13.65 8C13.65 7.63333 13.5 7.35 13.2 7.15L9.05 4.5C8.71667 4.28667 8.37667 4.27 8.03 4.45C7.67667 4.63 7.5 4.92 7.5 5.32V10.68C7.5 11.0733 7.67667 11.3633 8.03 11.55C8.37667 11.7367 8.71667 11.72 9.05 11.5ZM2 16C1.45333 16 0.983333 15.8033 0.59 15.41C0.196667 15.0233 0 14.5533 0 14V2C0 1.44667 0.196667 0.976667 0.59 0.59C0.983333 0.196667 1.45333 0 2 0H18C18.5533 0 19.0233 0.196667 19.41 0.59C19.8033 0.976667 20 1.44667 20 2V14C20 14.5533 19.8033 15.0233 19.41 15.41C19.0233 15.8033 18.5533 16 18 16H14V17C14 17.2867 13.9033 17.5233 13.71 17.71C13.5233 17.9033 13.2867 18 13 18H7C6.72 18 6.48333 17.9033 6.29 17.71C6.09667 17.5233 6 17.2867 6 17V16H2ZM2 14H18V2H2V14Z" />
+    </group>
+</vector>

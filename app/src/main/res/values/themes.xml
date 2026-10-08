@@ -1,0 +1,54 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Dark-only app (as designed). -->
+    <style name="Base.Theme.IPTVSmartPlayerLiveTV" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+        <item name="colorPrimaryContainer">@color/color_primary_dark</item>
+        <item name="colorOnPrimaryContainer">@color/color_text_primary</item>
+        <item name="colorSecondary">@color/color_accent_light</item>
+        <item name="colorOnSecondary">@color/color_background</item>
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="colorOnSurface">@color/color_text_primary</item>
+        <item name="colorSurfaceVariant">@color/color_surface_raised</item>
+        <item name="colorOnSurfaceVariant">@color/color_text_secondary</item>
+        <item name="colorOutline">@color/color_stroke</item>
+        <item name="colorError">@color/color_error</item>
+        <item name="android:colorBackground">@color/color_background</item>
+        <item name="android:windowBackground">@color/color_background</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:navigationBarColor">@color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:textColorPrimary">@color/color_text_primary</item>
+        <item name="android:textColorSecondary">@color/color_text_secondary</item>
+        <item name="android:textColorHint">@color/color_text_hint</item>
+        <item name="android:textColorHighlight">@color/color_accent_tint</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans_regular</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.App.Dialog</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.App.BottomSheet</item>
+    </style>
+
+    <style name="Theme.IPTVSmartPlayerLiveTV" parent="Base.Theme.IPTVSmartPlayerLiveTV" />
+
+    <style name="Theme.IPTVSmartPlayerLiveTV.Splash" parent="Theme.IPTVSmartPlayerLiveTV">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <!-- Dialogs and sheets draw their own rounded backgrounds. -->
+    <style name="ThemeOverlay.App.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+    </style>
+
+    <style name="ThemeOverlay.App.BottomSheet" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.App.BottomSheet</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:navigationBarColor">@color/color_surface</item>
+        <item name="android:backgroundDimAmount">0.62</item>
+    </style>
+    <style name="Widget.App.BottomSheet" parent="Widget.Material3.BottomSheet">
+        <item name="backgroundTint">@color/transparent</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+</resources>

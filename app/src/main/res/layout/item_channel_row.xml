@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_6sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginEnd="@dimen/_6sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:background="@drawable/bg_row"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/_84sdp"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/_10sdp"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingEnd="@dimen/_4sdp"
+    android:paddingBottom="@dimen/_10sdp">
+
+    <FrameLayout
+        android:layout_width="@dimen/row_thumb_width"
+        android:layout_height="@dimen/row_thumb_height">
+
+        <com.iptvplayer.xtreamiptv.myiptvpro.ui.common.ChannelThumbView
+            android:id="@+id/thumb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_thumb_12"
+            app:logoPadding="@dimen/_6sdp"
+            app:tileIconSize="@dimen/_22sdp"
+            app:tileSize="@dimen/_34sdp" />
+
+        <TextView
+            android:id="@+id/tvQuality"
+            style="@style/Text"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_gravity="bottom|start"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/bg_badge_small"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:textSize="@dimen/_10sdp"
+            android:fontFamily="@font/plus_jakarta_sans_semibold" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/_0sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/_15sdp"
+            android:fontFamily="@font/plus_jakarta_sans_semibold" />
+
+        <TextView
+            android:id="@+id/tvCategories"
+            style="@style/Text.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/_12_5sdp" />
+
+        <TextView
+            android:id="@+id/tvWatched"
+            style="@style/Text.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:drawableStart="@drawable/ic_history"
+            android:drawablePadding="@dimen/_4sdp"
+            android:drawableTint="@color/color_accent_light"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/color_accent_light"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnFavorite"
+        style="@style/IconButton.Plain"
+        android:contentDescription="@string/cd_favorite"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/sel_favorite"
+        app:tint="@color/selector_fav_tint" />
+
+    <ImageView
+        android:id="@+id/btnMore"
+        style="@style/IconButton.Plain"
+        android:contentDescription="@string/cd_more_actions"
+        android:src="@drawable/ic_more_vert"
+        app:tint="@color/color_text_soft" />
+</LinearLayout>

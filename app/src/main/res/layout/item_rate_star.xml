@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Design star: 48 round button, 38 glyph, 4 between stars. -->
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_48sdp"
+    android:layout_height="@dimen/_48sdp"
+    android:background="@drawable/bg_ripple_circle"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="@dimen/_5sdp"
+    android:src="@drawable/ic_star_border" />

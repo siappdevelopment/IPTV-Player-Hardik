@@ -1,0 +1,15 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- CSS: border-top 1px #30365D on a 28px top-rounded sheet -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/color_stroke" />
+            <corners android:topLeftRadius="@dimen/_28sdp" android:topRightRadius="@dimen/_28sdp" />
+        </shape>
+    </item>
+    <item android:top="@dimen/_1sdp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/color_surface" />
+            <corners android:topLeftRadius="@dimen/_27sdp" android:topRightRadius="@dimen/_27sdp" />
+        </shape>
+    </item>
+</layer-list>

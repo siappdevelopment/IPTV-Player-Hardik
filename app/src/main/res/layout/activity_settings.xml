@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/settingsRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/screen_padding"
+        android:paddingTop="@dimen/spacing_sm"
+        android:paddingEnd="@dimen/screen_padding"
+        android:paddingBottom="@dimen/spacing_lg">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            style="@style/IconButton"
+            android:contentDescription="@string/cd_back"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            style="@style/Text.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:text="@string/settings_title" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_0sdp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingStart="@dimen/screen_padding"
+        android:paddingEnd="@dimen/screen_padding"
+        android:paddingBottom="@dimen/_24sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- GENERAL -->
+            <TextView
+                style="@style/Text.Section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_4sdp"
+                android:text="@string/settings_section_general" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_group_card"
+                android:clipToOutline="true"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/rowLanguage"
+                    layout="@layout/item_setting_row" />
+            </LinearLayout>
+
+            <!-- PLAYBACK -->
+            <TextView
+                style="@style/Text.Section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_22sdp"
+                android:paddingStart="@dimen/_4sdp"
+                android:text="@string/settings_section_playback" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_group_card"
+                android:clipToOutline="true"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/rowResume"
+                    layout="@layout/item_setting_switch" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginStart="@dimen/_68sdp"
+                    android:background="@color/color_divider" />
+
+                <include
+                    android:id="@+id/rowHardware"
+                    layout="@layout/item_setting_switch" />
+            </LinearLayout>
+
+            <!-- PLAYLIST MANAGEMENT -->
+            <TextView
+                style="@style/Text.Section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_22sdp"
+                android:paddingStart="@dimen/_4sdp"
+                android:text="@string/settings_section_playlists" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_group_card"
+                android:clipToOutline="true"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/rowManage"
+                    layout="@layout/item_setting_row" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginStart="@dimen/_68sdp"
+                    android:background="@color/color_divider" />
+
+                <include
+                    android:id="@+id/rowRefresh"
+                    layout="@layout/item_setting_row" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginStart="@dimen/_68sdp"
+                    android:background="@color/color_divider" />
+
+                <include
+                    android:id="@+id/rowClearHistory"
+                    layout="@layout/item_setting_row" />
+            </LinearLayout>
+
+            <!-- ABOUT -->
+            <TextView
+                style="@style/Text.Section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_22sdp"
+                android:paddingStart="@dimen/_4sdp"
+                android:text="@string/settings_section_about" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_group_card"
+                android:clipToOutline="true"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/rowPrivacy"
+                    layout="@layout/item_setting_row" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginStart="@dimen/_68sdp"
+                    android:background="@color/color_divider" />
+
+                <include
+                    android:id="@+id/rowRate"
+                    layout="@layout/item_setting_row" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginStart="@dimen/_68sdp"
+                    android:background="@color/color_divider" />
+
+                <include
+                    android:id="@+id/rowShare"
+                    layout="@layout/item_setting_row" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginStart="@dimen/_68sdp"
+                    android:background="@color/color_divider" />
+
+                <include
+                    android:id="@+id/rowAbout"
+                    layout="@layout/item_setting_row" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

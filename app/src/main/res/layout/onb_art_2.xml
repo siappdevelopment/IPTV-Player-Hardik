@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Design onboarding 02 (art area 393 x 470): faded photo + URL form card + file card. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <!-- background photo: left 40, top 64, 313 x 340, r28, opacity .32 -->
+    <ImageView
+        android:layout_width="@dimen/_313sdp"
+        android:layout_height="@dimen/_340sdp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="@dimen/_64sdp"
+        android:alpha="0.32"
+        android:background="@drawable/bg_tile_art_b_28"
+        android:clipToOutline="true"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/art_photo_1036" />
+
+    <!-- URL card: left 22, top 110, 310 wide, 16 padding, 10 gaps -->
+    <LinearLayout
+        android:layout_width="@dimen/_310sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="@dimen/_22sdp"
+        android:layout_marginTop="@dimen/_110sdp"
+        android:background="@drawable/bg_art_card"
+        android:orientation="vertical"
+        android:padding="@dimen/_16sdp">
+
+        <TextView
+            style="@style/Text.Semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/onb_art_url_label"
+            android:textColor="@color/color_text_secondary"
+            android:textSize="@dimen/_12sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_46sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/bg_art_input"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_12sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_link"
+                app:tint="@color/color_accent_light" />
+
+            <TextView
+                style="@style/Text"
+                android:layout_width="@dimen/_0sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/onb_art_url_value"
+                android:textSize="@dimen/_13sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_check_circle"
+                app:tint="@color/color_success" />
+
+            <TextView
+                style="@style/Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:text="@string/onb_art_url_ok"
+                android:textColor="@color/color_success"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- file card: left 62, top 268, 310 wide, padding 14/16, 12 gap -->
+    <LinearLayout
+        android:layout_width="@dimen/_310sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="@dimen/_62sdp"
+        android:layout_marginTop="@dimen/_268sdp"
+        android:background="@drawable/bg_art_card_raised"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingTop="@dimen/_14sdp"
+        android:paddingEnd="@dimen/_16sdp"
+        android:paddingBottom="@dimen/_14sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_42sdp"
+                android:layout_height="@dimen/_42sdp"
+                android:background="@drawable/bg_tile_high_13"
+                android:importantForAccessibility="no"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/ic_description"
+                app:tint="@color/color_accent_light" />
+
+            <LinearLayout
+                android:layout_width="@dimen/_0sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Text.Semibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/onb_art_file_name"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    style="@style/Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="@string/onb_art_file_meta"
+                    android:textColor="@color/color_text_secondary"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_check_circle"
+                app:tint="@color/color_success" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/bg_gradient_progress" />
+    </LinearLayout>
+</FrameLayout>

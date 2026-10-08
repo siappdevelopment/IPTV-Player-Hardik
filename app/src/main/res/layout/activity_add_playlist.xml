@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/addRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/screen_padding"
+            android:paddingTop="@dimen/spacing_sm"
+            android:paddingEnd="@dimen/screen_padding"
+            android:paddingBottom="@dimen/spacing_lg">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                style="@style/IconButton"
+                android:contentDescription="@string/cd_back"
+                android:src="@drawable/ic_arrow_back" />
+
+            <LinearLayout
+                android:layout_width="@dimen/_0sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Text.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_title" />
+
+                <TextView
+                    style="@style/Text.Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="@string/add_subtitle" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_0sdp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:paddingStart="@dimen/screen_padding"
+            android:paddingEnd="@dimen/screen_padding"
+            android:paddingBottom="@dimen/screen_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- tabs -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_tab_group"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_4sdp">
+
+                    <com.iptvplayer.xtreamiptv.myiptvpro.ui.common.IconTextView
+                        android:id="@+id/tabUrl"
+                        app:iconSize="@dimen/_20sdp"
+                        style="@style/Text.BodyStrong"
+                        android:layout_width="@dimen/_0sdp"
+                        android:layout_height="@dimen/_46sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_tab_pill"
+                        android:clickable="true"
+                        android:drawableStart="@drawable/ic_link"
+                        android:drawablePadding="@dimen/_8sdp"
+                        android:drawableTint="@color/selector_tab_text"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="@string/tab_import_url"
+                        android:textColor="@color/selector_tab_text" />
+
+                    <com.iptvplayer.xtreamiptv.myiptvpro.ui.common.IconTextView
+                        android:id="@+id/tabFile"
+                        app:iconSize="@dimen/_20sdp"
+                        style="@style/Text.BodyStrong"
+                        android:layout_width="@dimen/_0sdp"
+                        android:layout_height="@dimen/_46sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_tab_pill"
+                        android:clickable="true"
+                        android:drawableStart="@drawable/ic_upload_file"
+                        android:drawablePadding="@dimen/_8sdp"
+                        android:drawableTint="@color/selector_tab_text"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="@string/tab_upload_file"
+                        android:textColor="@color/selector_tab_text" />
+                </LinearLayout>
+
+                <!-- name -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Text.BodyStrong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_playlist_name"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <TextView
+                        style="@style/Text.BodyStrong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:text="*"
+                        android:textColor="@color/color_error"
+                        android:textSize="@dimen/_14sdp" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/fieldName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_56sdp"
+                    android:layout_marginTop="@dimen/spacing_sm"
+                    android:addStatesFromChildren="true"
+                    android:background="@drawable/bg_input">
+
+                    <EditText
+                        android:id="@+id/etName"
+                        style="@style/Input"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/hint_playlist_name"
+                        android:inputType="textCapWords"
+                        android:paddingStart="@dimen/_16sdp"
+                        android:paddingEnd="@dimen/_16sdp" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tvNameError"
+                    style="@style/Text.Error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:drawableStart="@drawable/ic_error"
+                    android:drawableTint="@color/color_error"
+                    android:gravity="center_vertical"
+                    android:visibility="gone" />
+
+                <!-- URL tab -->
+                <LinearLayout
+                    android:id="@+id/groupUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Text.BodyStrong"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/label_m3u_url"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <TextView
+                            style="@style/Text.BodyStrong"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_4sdp"
+                            android:text="*"
+                            android:textColor="@color/color_error"
+                            android:textSize="@dimen/_14sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fieldUrl"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_56sdp"
+                        android:layout_marginTop="@dimen/spacing_sm"
+                        android:addStatesFromChildren="true"
+                        android:background="@drawable/bg_input"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/_16sdp"
+                        android:paddingEnd="@dimen/_6sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:importantForAccessibility="no"
+                            android:src="@drawable/ic_link"
+                            app:tint="@color/color_accent_light" />
+
+                        <EditText
+                            android:id="@+id/etUrl"
+                            style="@style/Input"
+                            android:layout_width="@dimen/_0sdp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:hint="@string/hint_m3u_url"
+                            android:inputType="textUri" />
+
+                        <ImageView
+                            android:id="@+id/btnClearUrl"
+                            style="@style/IconButton.Plain"
+                            android:contentDescription="@string/cd_clear"
+                            android:src="@drawable/ic_close"
+                            android:visibility="gone"
+                            app:tint="@color/color_text_secondary" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvUrlError"
+                        style="@style/Text.Error"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:drawableStart="@drawable/ic_error"
+                        android:drawableTint="@color/color_error"
+                        android:gravity="center_vertical"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvUrlHint"
+                        style="@style/Text.Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="@string/add_url_hint"
+                        android:textColor="@color/color_text_tertiary"
+                        android:textSize="@dimen/_12_5sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:gravity="bottom"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Text.Subtitle"
+                            android:layout_width="@dimen/_0sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/add_suggested" />
+
+                        <TextView
+                            style="@style/Text.Caption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/add_suggested_source" />
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvSuggestions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_xs"
+                        android:nestedScrollingEnabled="false"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                </LinearLayout>
+
+                <!-- file tab -->
+                <LinearLayout
+                    android:id="@+id/groupFile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Text.BodyStrong"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/label_m3u_file"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <TextView
+                            style="@style/Text.BodyStrong"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_4sdp"
+                            android:text="*"
+                            android:textColor="@color/color_error"
+                            android:textSize="@dimen/_14sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dropZone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_sm"
+                        android:background="@drawable/bg_dashed"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingTop="@dimen/_28sdp"
+                        android:paddingEnd="@dimen/_20sdp"
+                        android:paddingBottom="@dimen/_28sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:background="@drawable/bg_tile_raised"
+                            android:importantForAccessibility="no"
+                            android:padding="@dimen/_15sdp"
+                            android:src="@drawable/ic_upload_file"
+                            app:tint="@color/color_accent_light" />
+
+                        <TextView
+                            style="@style/Text.Subtitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="@string/choose_m3u_file"
+                            android:textSize="@dimen/_16sdp" />
+
+                        <TextView
+                            style="@style/Text.Caption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="@string/choose_m3u_hint"
+                            android:textSize="@dimen/_12_5sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fileCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_sm"
+                        android:background="@drawable/bg_row_base"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/_12sdp"
+                        android:paddingTop="@dimen/_12sdp"
+                        android:paddingEnd="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_12sdp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="@dimen/_46sdp"
+                            android:layout_height="@dimen/_46sdp"
+                            android:background="@drawable/bg_tile_high_14"
+                            android:importantForAccessibility="no"
+                            android:padding="@dimen/_11sdp"
+                            android:src="@drawable/ic_description"
+                            app:tint="@color/color_accent_light" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_0sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvFileName"
+                                style="@style/Text.BodyStrong"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="middle"
+                                android:maxLines="1" />
+
+                            <TextView
+                                android:id="@+id/tvFileMeta"
+                                style="@style/Text.Caption"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:drawableStart="@drawable/ic_check_circle"
+                                android:drawablePadding="@dimen/_5sdp"
+                                android:drawableTint="@color/color_success"
+                                android:gravity="center_vertical"
+                                android:text="@string/file_ready"
+                                android:textColor="@color/color_success"
+                                android:textSize="@dimen/_12_5sdp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/btnRemoveFile"
+                            style="@style/IconButton.Plain"
+                            android:contentDescription="@string/cd_remove_file"
+                            android:src="@drawable/ic_close"
+                            app:tint="@color/color_text_secondary" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/btnChangeFile"
+                        style="@style/Button.Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_36sdp"
+                        android:minHeight="@dimen/_36sdp"
+                        android:text="@string/choose_different_file"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvFileError"
+                        style="@style/Text.Error"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:drawableStart="@drawable/ic_error"
+                        android:drawableTint="@color/color_error"
+                        android:gravity="center_vertical"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <!-- load failure -->
+                <LinearLayout
+                    android:id="@+id/errorBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/bg_error_banner"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_16sdp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_wifi_off"
+                        app:tint="@color/color_error" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_0sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/Text.BodyStrong"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/add_error_title" />
+
+                        <TextView
+                            android:id="@+id/tvErrorDesc"
+                            style="@style/Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            app:lineHeight="@dimen/_19sdp"
+                            android:text="@string/add_error_desc"
+                            android:textColor="@color/color_text_soft"
+                            android:textSize="@dimen/_13sdp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <!-- CTA -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_background"
+            android:paddingStart="@dimen/screen_padding"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingEnd="@dimen/screen_padding"
+            android:paddingBottom="@dimen/_14sdp">
+
+            <com.iptvplayer.xtreamiptv.myiptvpro.ui.common.IconTextView
+                android:id="@+id/btnAdd"
+                app:iconSize="@dimen/_22sdp"
+                style="@style/Button.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:drawableEnd="@drawable/ic_add"
+                android:drawableTint="@color/white"
+                android:text="@string/action_add_playlist" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- loading -->
+    <FrameLayout
+        android:id="@+id/loadingOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_scrim_dialog"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_loading_card"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_24sdp"
+            android:paddingTop="@dimen/_28sdp"
+            android:paddingEnd="@dimen/_24sdp"
+            android:paddingBottom="@dimen/_28sdp">
+
+            <ProgressBar
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:indeterminateTint="@color/color_primary" />
+
+            <TextView
+                style="@style/Text.Subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:text="@string/add_loading_title"
+                android:textSize="@dimen/_18sdp" />
+
+            <TextView
+                android:id="@+id/tvLoadingDesc"
+                style="@style/Text.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:gravity="center"
+                app:lineHeight="@dimen/_19_5sdp"
+                android:textSize="@dimen/_13_5sdp" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>
