@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1038144523951",
+    "project_id": "xtreamiptv--myiptvpro",
+    "storage_bucket": "xtreamiptv--myiptvpro.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1038144523951:android:70791dfc989f2be237ce5a",
+        "android_client_info": {
+          "package_name": "com.iptvplayer.xtreamiptv.myiptvpro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6_vGFvEdCHtmm8ejHi88j-09OO1JwJSQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
