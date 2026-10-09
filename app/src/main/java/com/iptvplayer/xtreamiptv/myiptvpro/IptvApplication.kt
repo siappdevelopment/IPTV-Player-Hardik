@@ -1,7 +1,6 @@
 package com.iptvplayer.xtreamiptv.myiptvpro
 
-import com.iptvplayer.xtreamiptv.myiptvpro.ADS.advertisement.ADSAppManage
-import com.iptvplayer.xtreamiptv.myiptvpro.utils.ActivityStackTracker
+import android.app.Application
 import android.content.Context
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -23,12 +22,11 @@ class AppContainer(context: Context) {
     val defaultPlaylists = DefaultPlaylistSeeder(playlistRepository, preferences)
 }
 
-class IptvApplication : ADSAppManage() {
+class IptvApplication : Application() {
     val container: AppContainer by lazy { AppContainer(this) }
 
     override fun onCreate() {
         super.onCreate()
-        ActivityStackTracker.register(this)
         // Adds the default playlists in the background; a no-op once they are all in the library.
         CoroutineScope(SupervisorJob() + Dispatchers.Default).launch { container.defaultPlaylists.seedIfNeeded() }
     }

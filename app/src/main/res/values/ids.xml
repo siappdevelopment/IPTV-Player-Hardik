@@ -2,5 +2,4 @@
 <resources>
     <item name="tag_icon_start" type="id" />
     <item name="tag_icon_end" type="id" />
-    <item name="flListNativePlaceholder" type="id" />
 </resources>
