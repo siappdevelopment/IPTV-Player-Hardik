@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/_10sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/ivVpn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/ic_vpn"
+            android:tag="theme_icon" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/plus_jakarta_sans_bold"
+            android:includeFontPadding="false"
+            android:text="@string/vpn_detected_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp" />
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:fontFamily="@font/plus_jakarta_sans_medium"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/vpn_detected_message"
+            android:textColor="#7A7E8C"
+            android:textSize="@dimen/_12sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btnOpenSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_save"
+                android:fontFamily="@font/plus_jakarta_sans_bold"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingVertical="@dimen/_10sdp"
+                android:tag="theme_primary_bg"
+                android:text="@string/vpn_open_settings"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                android:id="@+id/btnRetry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_cancel"
+                android:fontFamily="@font/plus_jakarta_sans_bold"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingVertical="@dimen/_10sdp"
+                android:text="@string/retry"
+                android:textColor="#7A7E8C"
+                android:textSize="@dimen/_13sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

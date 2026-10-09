@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".ADS.activities.splash.SplashActivity">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/imgWave"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/sp_img" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/plus_jakarta_sans_bold"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:text="@string/st_app_name"
+                    android:textColor="#015D2D"
+                    android:includeFontPadding="false"
+                    android:textSize="@dimen/_17sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_70sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/plus_jakarta_sans_medium"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:includeFontPadding="false"
+                    android:text="@string/plan_remember_celebrate"
+                    android:textColor="#3D9C5E"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgWave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/splash_bottom_img" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_130sdp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/splash_loading_lottie" />
+
+            <LinearLayout
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    app:cardBackgroundColor="#00000000"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/shimmer_container_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        app:shimmer_auto_start="true"
+                        app:shimmer_base_color="#ccc">
+
+                        <include layout="@layout/fill_in_ad_unifiled_small" />
+
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/flNativeSmallPlaceholder"
+                        style="@style/NativeAdsView" />
+
+                </androidx.cardview.widget.CardView>
+
+                <FrameLayout
+                    android:id="@+id/flBannerSmallPlaceholder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+</layout>

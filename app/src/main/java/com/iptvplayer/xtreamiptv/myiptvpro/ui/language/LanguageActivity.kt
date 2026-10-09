@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.iptvplayer.xtreamiptv.myiptvpro.R
 import com.iptvplayer.xtreamiptv.myiptvpro.container
 import com.iptvplayer.xtreamiptv.myiptvpro.data.prefs.AppLanguages
-import com.iptvplayer.xtreamiptv.myiptvpro.databinding.ActivityLanguageBinding
+import com.iptvplayer.xtreamiptv.myiptvpro.databinding.ActivityLanguagePickerBinding
 import com.iptvplayer.xtreamiptv.myiptvpro.ui.onboarding.OnboardingActivity
 import com.iptvplayer.xtreamiptv.myiptvpro.utils.applySystemBarInsets
 import com.iptvplayer.xtreamiptv.myiptvpro.utils.enableAppEdgeToEdge
@@ -17,7 +17,7 @@ import com.iptvplayer.xtreamiptv.myiptvpro.utils.show
 /** Language picker. First launch continues to onboarding; from Settings it returns there. */
 class LanguageActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityLanguageBinding
+    private lateinit var binding: ActivityLanguagePickerBinding
     private val fromSettings by lazy { intent.getBooleanExtra(EXTRA_FROM_SETTINGS, false) }
     private var query = ""
     private lateinit var selectedCode: String
@@ -30,7 +30,7 @@ class LanguageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         enableAppEdgeToEdge()
         super.onCreate(savedInstanceState)
-        binding = ActivityLanguageBinding.inflate(layoutInflater)
+        binding = ActivityLanguagePickerBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.languageRoot.applySystemBarInsets()
 

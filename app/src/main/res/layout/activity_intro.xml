@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/introRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_0sdp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- art area: clipped, with the violet radial glow -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_470sdp"
+                android:background="@drawable/bg_splash_glow"
+                android:clipChildren="true">
+
+                <include
+                    android:id="@+id/art1"
+                    layout="@layout/onb_art_1" />
+
+                <include
+                    android:id="@+id/art2"
+                    layout="@layout/onb_art_2" />
+
+                <include
+                    android:id="@+id/art3"
+                    layout="@layout/onb_art_3" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/Text.Display"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_24sdp"
+                app:lineHeight="@dimen/_32sdp" />
+
+            <TextView
+                android:id="@+id/tvSub"
+                style="@style/Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_24sdp"
+                android:textColor="@color/color_text_secondary"
+                android:textSize="@dimen/_16sdp"
+                app:lineHeight="@dimen/_24sdp" />
+
+            <LinearLayout
+                android:id="@+id/dots"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:orientation="horizontal" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.iptvplayer.xtreamiptv.myiptvpro.ui.common.IconTextView
+        android:id="@+id/btnNext"
+        style="@style/Button.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_56sdp"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginEnd="@dimen/_24sdp"
+        android:drawableEnd="@drawable/ic_arrow_forward"
+        android:drawableTint="@color/white"
+        android:text="@string/action_next"
+        app:iconSize="@dimen/_20sdp" />
+
+    <!-- bottom ad: the placeholder covers the slot until the ad loads or fails -->
+    <FrameLayout
+        android:id="@+id/adContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_24sdp"
+        android:layout_marginBottom="@dimen/_12sdp">
+
+        <FrameLayout
+            android:id="@+id/adSlot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/adPlaceholder"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_72sdp"
+            android:background="@drawable/bg_card" />
+    </FrameLayout>
+</LinearLayout>

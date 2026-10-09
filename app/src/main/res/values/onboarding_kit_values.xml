@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="calendar_primary">#027E57</color>
+    <color name="bg_color">#FFFFFF</color>
+    <color name="gray_color">#68727E</color>
+    <color name="other_button_bg_color">#F2F3F6</color>
+    <color name="border_color">#CDD1D6</color>
+    <color name="privacy_divider">#E8E8E8</color>
+    <color name="privacy_accent">#5B4FE8</color>
+    <color name="divider">#F2F4F6</color>
+    <color name="shimmer_base">#AEB0B6</color>
+    <color name="quiz_shimmer_base">#AEB0B6</color>
+    <color name="quiz_shimmer_effect">#F0F0F2</color>
+    <color name="onboarding_dot_inactive">#CDD1D6</color>
+    <color name="privacy_checkbox_unchecked_stroke">#C5C5C5</color>
+    <color name="text_secondary_light">#9AA0A6</color>
+    <color name="quiz_rating_star_filled">#FFC107</color>
+    <color name="list_native_ad_bg">#FFFFFF</color>
+    <color name="list_native_ad_bg_light">#E7EAED</color>
+    <dimen name="onboarding_dot_size">12dp</dimen>
+    <dimen name="onboarding_dot_active_width">28dp</dimen>
+    <dimen name="onboarding_dot_spacing">12dp</dimen>
+    <string name="lang_en_local" translatable="false">English</string>
+    <string name="lang_en_english" translatable="false">English</string>
+    <string name="lang_en_country" translatable="false">United States</string>
+    <string name="lang_hi_local" translatable="false">हिंदी</string>
+    <string name="lang_hi_english" translatable="false">Hindi</string>
+    <string name="lang_hi_country" translatable="false">India</string>
+    <string name="lang_ru_local" translatable="false">Русский</string>
+    <string name="lang_ru_english" translatable="false">Russian</string>
+    <string name="lang_ru_country" translatable="false">Russia</string>
+    <string name="lang_it_local" translatable="false">Italiano</string>
+    <string name="lang_it_english" translatable="false">Italian</string>
+    <string name="lang_it_country" translatable="false">Italy</string>
+    <string name="lang_fr_local" translatable="false">Français</string>
+    <string name="lang_fr_english" translatable="false">French</string>
+    <string name="lang_fr_country" translatable="false">France</string>
+    <string name="lang_es_local" translatable="false">Español</string>
+    <string name="lang_es_english" translatable="false">Spanish</string>
+    <string name="lang_es_country" translatable="false">Spain</string>
+    <string name="lang_ja_local" translatable="false">日本語</string>
+    <string name="lang_ja_english" translatable="false">Japanese</string>
+    <string name="lang_ja_country" translatable="false">Japan</string>
+    <string name="lang_ko_local" translatable="false">한국어</string>
+    <string name="lang_ko_english" translatable="false">Korean</string>
+    <string name="lang_ko_country" translatable="false">South Korea</string>
+    <string name="lang_de_local" translatable="false">Deutsch</string>
+    <string name="lang_de_english" translatable="false">German</string>
+    <string name="lang_de_country" translatable="false">Germany</string>
+    <string name="lang_zh_local" translatable="false">中文</string>
+    <string name="lang_zh_english" translatable="false">Chinese</string>
+    <string name="lang_zh_country" translatable="false">China</string>
+    <string name="lang_th_local" translatable="false">ไทย</string>
+    <string name="lang_th_english" translatable="false">Thai</string>
+    <string name="lang_th_country" translatable="false">Thailand</string>
+    <string name="lang_pt_local" translatable="false">Português</string>
+    <string name="lang_pt_english" translatable="false">Portuguese</string>
+    <string name="lang_pt_country" translatable="false">Portugal</string>
+    <string name="lang_nl_local" translatable="false">Nederlands</string>
+    <string name="lang_nl_english" translatable="false">Dutch</string>
+    <string name="lang_nl_country" translatable="false">Netherlands</string>
+    <string name="lang_fil_local" translatable="false">Pilipino</string>
+    <string name="lang_fil_english" translatable="false">Filipino</string>
+    <string name="lang_fil_country" translatable="false">Philippines</string>
+    <string name="lang_tr_local" translatable="false">Türkçe</string>
+    <string name="lang_tr_english" translatable="false">Turkish</string>
+    <string name="lang_tr_country" translatable="false">Turkey</string>
+    <string name="lang_id_local" translatable="false">Indonesia</string>
+    <string name="lang_id_english" translatable="false">Indonesian</string>
+    <string name="lang_id_country" translatable="false">Indonesia</string>
+    <string name="lang_en_gb_local" translatable="false">English</string>
+    <string name="lang_en_gb_english" translatable="false">English (UK)</string>
+    <string name="lang_en_gb_country" translatable="false">United Kingdom</string>
+    <string name="lang_pt_br_local" translatable="false">Português</string>
+    <string name="lang_pt_br_english" translatable="false">Portuguese (Brazil)</string>
+    <string name="lang_pt_br_country" translatable="false">Brazil</string>
+    <string name="lang_af_local" translatable="false">Afrikaans</string>
+    <string name="lang_af_english" translatable="false">Afrikaans</string>
+    <string name="lang_af_country" translatable="false">South Africa</string>
+    <string name="lang_el_local" translatable="false">Afrikaans</string>
+    <string name="lang_el_english" translatable="false">Afrikaans</string>
+    <string name="lang_el_country" translatable="false">South Africa</string>
+    <dimen name="quiz_rating_star_size">20dp</dimen>
+    <dimen name="quiz_rating_star_offset_1">24dp</dimen>
+    <dimen name="quiz_rating_star_offset_2">48dp</dimen>
+    <dimen name="quiz_rating_star_offset_3">72dp</dimen>
+    <dimen name="quiz_rating_star_offset_4">96dp</dimen>
+    <dimen name="quiz_rating_bar_width">116dp</dimen>
+    <string name="st_app_name">Simple Calendar: Planner Home</string>
+    <string name="plan_remember_celebrate">Plan. Remember. Celebrate.</string>
+    <string name="onboarding_title_1">Smart Calendar</string>
+    <string name="onboarding_title_2">Create Events Effortlessly</string>
+    <string name="onboarding_title_3">Never Miss Important Days</string>
+    <string name="onboarding_description_1">Keep your schedule organized with events, reminders, and tasks in one simple calendar</string>
+    <string name="onboarding_description_2">Schedule events, set reminders, and stay organized with ease.</string>
+    <string name="onboarding_description_3"> Keep track of holidays, birthdays, and special occasions in one place.</string>
+    <string name="call">Call</string>
+    <string name="please_select_language">Please select language</string>
+    <string name="setting">Setting</string>
+    <string name="privacy_agree_checkbox">I agree to this data collection</string>
+    <string name="privacy_agree_continue">Agree &amp; Continue</string>
+    <string name="privacy_data_title">A quick note about your data</string>
+    <string name="privacy_data_intro_1">We use a little information from your device to keep this app fast and reliable, to show ads that keep it free, and to send you useful notifications.</string>
+    <string name="privacy_data_what_we_use">What we use and why:</string>
+    <string name="privacy_terms_short">Terms</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="privacy_data_footer">By tapping Agree &amp; Continue you accept our %1$s and confirm you\'re okay with this. This usage, device, and advertising data is processed by the analytics and ad services we use. See our %2$s for details.</string>
+    <string name="privacy_please_agree">Please agree to data collection to continue</string>
+    <string name="language">Language</string>
+    <string name="vpn_detected_title">VPN Detected</string>
+    <string name="vpn_detected_message">Please turn off your VPN to continue using the app.</string>
+    <string name="vpn_open_settings">Open Settings</string>
+    <string name="vpn_still_active">VPN is still active. Please turn it off to continue.</string>
+    <string name="retry">Retry</string>
+    <string name="add_quick_response">Add Quick Response</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="we_don_t_collect_personal">We don’t collect personal or sensitive data. Your data stays private. %1$s and %2$s</string>
+    <string name="set_as_default">Set As Default</string>
+    <string name="set_calendar_as_your_home_app">Set Calendar as Your Home App</string>
+    <string name="set_calendar_home_launcher_as_your_default_home_app_to_quickly_access_calendar_calls_and_your_personalized_home_screen_experience">Set Calendar Home Launcher as your default Home app to quickly access Events, Task and your personalized home screen experience.</string>
+    <string name="no_delay">No Delay</string>
+    <string name="continue_">Continue</string>
+    <string name="next">Next</string>
+    <string name="please_allow_exact_alarm_permission">Please allow exact alarm permission</string>
+    <string name="please_select_future_time">Please select future time</string>
+    <string name="enter_your_massage">Enter your massage</string>
+    <string name="okay">OK</string>
+    <string name="Enable_Smart_Permissions">Enable Smart Permissions</string>
+    <string name="Allow_a_few_permissions_to_unlock_reminders_event_sync_and_personalized_suggestions">Allow a few permissions to unlock reminders, event sync, and personalized suggestions.</string>
+    <string name="Notification">Notification</string>
+    <string name="stay_updated_with_important_alerts_and_app_activities">Stay updated with important alerts and app activities</string>
+    <string name="Experience_high_quality_voice_calls_wherever_you_are">Experience high-quality voice calls wherever you are</string>
+    <string name="overlay_permission">Overlay Permission</string>
+    <string name="Never_miss_important_reminders_and_schedules">Never miss important reminders and schedules</string>
+    <string name="Allow_and_Continue">Allow &amp; Continue</string>
+    <string name="calendar_event_data_access">Calendar and event data to create, view, edit, organize, and manage your events, tasks, and schedules.</string>
+    <string name="calendar_access">Calendar access, where permitted, to display and manage events and schedules from calendars available on your device.</string>
+    <string name="app_usage_data">App usage information to understand which screens and features are used and to improve app performance and user experience.</string>
+    <string name="device_app_information">Device and app information to diagnose errors, improve stability, and support notifications and app functionality.</string>
+    <string name="advertising_id_usage">Advertising ID may be used to display and measure advertisements where applicable.</string>
+    <string name="by_tapping_agree_continue_you_accept_our_terms_and_confirm_you_re_okay_with_this_this_usage_device_and_advertising_data_is_processed_by_the_analytics_and_ad_services_we_use_see_our_privacy_policy_for_details"><![CDATA[By tapping Agree & Continue you accept our Terms and confirm you\'re okay with this. This usage, device, and advertising data is processed by the analytics and ad services we use. See our Privacy Policy for details.]]></string>
+    <string name="Loading">Loading..!</string>
+    <string name="Please_wait_Ads_will_appear">Please wait Ads will appear...</string>
+    <string name="Choose_Your_Language">Choose Your Language</string>
+    <string name="Personalize_your_app_with_your_language">Personalize your app with your language</string>
+    <string name="markrting_converter1">gclid</string>
+    <string name="utm_source_apps_facebook_com">utm_source=apps.facebook.com</string>
+    <string name="utm_source_apps_instagram_com">utm_source=apps.instagram.com</string>
+    <string name="utm_source_marketing">utm_source=marketing</string>
+    <string name="home_selection_tap_hand">👆</string>
+    <string name="default_home_guide_message">Tap to set as your\ndefault Home app</string>
+    <style name="TextStyle.Regular" parent="TextStyle">
+        <item name="android:fontFamily">@font/plus_jakarta_sans_medium</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+    <style name="TextStyle.Medium" parent="TextStyle">
+        <item name="android:fontFamily">@font/plus_jakarta_sans_medium</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+    <style name="TextStyle.MediumSemiBold" parent="TextStyle">
+        <item name="android:fontFamily">@font/plus_jakarta_sans_semibold</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+    </style>
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#ADA1A1A1</item>
+        <item name="colorControlActivated">#AD707070</item>
+    </style>
+    <style name="NativeAdsView">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="TextStyle" />
+    <style name="TextStyle.Small" parent="TextStyle">
+        <item name="android:fontFamily">@font/plus_jakarta_sans_medium</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+    </style>
+</resources>

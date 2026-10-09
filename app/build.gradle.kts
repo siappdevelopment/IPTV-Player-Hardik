@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.ksp)
+    alias(libs.plugins.google.services)
 }
 
 android {
@@ -27,6 +28,8 @@ android {
 
     buildFeatures {
         viewBinding = true
+        dataBinding = true
+        buildConfig = true
     }
 
     buildTypes {
@@ -69,6 +72,24 @@ dependencies {
 
     implementation(libs.coil)
     implementation(libs.coil.network.okhttp)
+
+    // Startup flow kit (Splash -> Language -> Onboarding -> Permission -> Policy -> Home).
+    // SDP dimens come from the project's own res/values/sdp.xml.
+    implementation("com.airbnb.android:lottie:6.7.1")
+    implementation("com.facebook.shimmer:shimmer:0.5.0")
+    implementation("com.google.android.gms:play-services-ads:24.7.0")
+    implementation("com.facebook.android:audience-network-sdk:6.21.0")
+    implementation("com.google.ads.mediation:facebook:6.21.0.0") {
+        exclude(group = "org.jacoco", module = "org.jacoco.core")
+    }
+    implementation(platform("com.google.firebase:firebase-bom:34.0.0"))
+    implementation("com.google.firebase:firebase-config")
+    implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-messaging")
+    implementation("com.android.installreferrer:installreferrer:2.2")
+    implementation("androidx.work:work-runtime:2.8.1")
+    implementation("com.google.code.gson:gson:2.13.1")
+    implementation("com.sun.jersey:jersey-core:1.19.4")
 
     testImplementation(libs.junit)
     testImplementation(libs.kotlinx.coroutines.test)

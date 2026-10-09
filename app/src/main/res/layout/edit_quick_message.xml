@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/all_rounded_corner_bg"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_14sdp">
+
+            <TextView
+                style="@style/TextStyle.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="@string/add_quick_response"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:src="@drawable/ic_close" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/bg_rounded_with_stoke">
+
+            <EditText
+                android:id="@+id/edt_message"
+                style="@style/TextStyle.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/enter_your_massage"
+                android:imeOptions="actionDone"
+                android:padding="@dimen/_12sdp"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_okay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:cardBackgroundColor="#E6F2EE"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:strokeWidth="0dp">
+
+            <TextView
+                style="@style/TextStyle.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/_12sdp"
+                android:text="@string/okay"
+                android:textColor="@color/calendar_primary" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</layout>

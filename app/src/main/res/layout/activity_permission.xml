@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".ui.activities.permission.PermissionActivity">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toTopOf="@+id/ll_permission"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_24sdp">
+
+                <ImageView
+                    android:id="@+id/ivPermission"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/iv_permission" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    style="@style/TextStyle.MediumSemiBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:gravity="center"
+                    android:text="@string/Enable_Smart_Permissions"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16sdp" />
+
+                <TextView
+                    android:id="@+id/tvDescription"
+                    style="@style/TextStyle.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:gravity="center"
+                    android:text="@string/Allow_a_few_permissions_to_unlock_reminders_event_sync_and_personalized_suggestions"
+                    android:textColor="@color/gray_color"
+                    android:textSize="@dimen/_10sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/cardNotification"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/_5sdp"
+                            android:background="@drawable/common_bg"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_10sdp">
+
+                            <ImageView
+                                android:layout_width="@dimen/_34sdp"
+                                android:layout_height="@dimen/_34sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/_12sdp"
+                                android:src="@drawable/ic_notification_permission" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/plus_jakarta_sans_medium"
+                                    android:text="@string/Notification"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_13sdp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_3sdp"
+                                    android:fontFamily="@font/plus_jakarta_sans_medium"
+                                    android:text="@string/stay_updated_with_important_alerts_and_app_activities"
+                                    android:textColor="@color/gray_color"
+                                    android:textSize="@dimen/_10sdp" />
+                            </LinearLayout>
+
+                            <androidx.appcompat.widget.SwitchCompat
+                                android:id="@+id/swNotification"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:showText="false"
+                                android:thumb="@drawable/switch_compat_thumb"
+                                app:switchMinWidth="40dp"
+                                app:switchPadding="0dp"
+                                app:thumbTextPadding="0dp"
+                                app:thumbTint="@null"
+                                app:track="@drawable/switch_compat_track_selector"
+                                app:trackTint="@null" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/cardCall"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/_5sdp"
+                            android:background="@drawable/common_bg"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_10sdp">
+
+                            <ImageView
+                                android:layout_width="@dimen/_34sdp"
+                                android:layout_height="@dimen/_34sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/_12sdp"
+                                android:src="@drawable/ic_call_notification" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/plus_jakarta_sans_medium"
+                                    android:text="@string/call"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_13sdp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_3sdp"
+                                    android:fontFamily="@font/plus_jakarta_sans_medium"
+                                    android:text="@string/Experience_high_quality_voice_calls_wherever_you_are"
+                                    android:textColor="@color/gray_color"
+                                    android:textSize="@dimen/_10sdp" />
+                            </LinearLayout>
+
+                            <androidx.appcompat.widget.SwitchCompat
+                                android:id="@+id/swCall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:showText="false"
+                                android:thumb="@drawable/switch_compat_thumb"
+                                app:switchMinWidth="40dp"
+                                app:switchPadding="0dp"
+                                app:thumbTextPadding="0dp"
+                                app:thumbTint="@null"
+                                app:track="@drawable/switch_compat_track_selector"
+                                app:trackTint="@null" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/cardOverlay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/_5sdp"
+                            android:background="@drawable/common_bg"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_10sdp">
+
+                            <ImageView
+                                android:layout_width="@dimen/_34sdp"
+                                android:layout_height="@dimen/_34sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/_12sdp"
+                                android:src="@drawable/ic_display_over_permission" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/plus_jakarta_sans_medium"
+                                    android:text="@string/overlay_permission"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_13sdp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_3sdp"
+                                    android:fontFamily="@font/plus_jakarta_sans_medium"
+                                    android:text="@string/Never_miss_important_reminders_and_schedules"
+                                    android:textColor="@color/gray_color"
+                                    android:textSize="@dimen/_10sdp" />
+                            </LinearLayout>
+
+                            <androidx.appcompat.widget.SwitchCompat
+                                android:id="@+id/swOverlay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:showText="false"
+                                android:thumb="@drawable/switch_compat_thumb"
+                                app:switchMinWidth="40dp"
+                                app:switchPadding="0dp"
+                                app:thumbTextPadding="0dp"
+                                app:thumbTint="@null"
+                                app:track="@drawable/switch_compat_track_selector"
+                                app:trackTint="@null" />
+                        </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_permission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAllowPermission"
+                style="@style/TextStyle.MediumSemiBold"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_42sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/button_bg"
+                android:backgroundTint="@color/calendar_primary"
+                android:gravity="center"
+                android:text="@string/Allow_and_Continue"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp" />
+
+            <LinearLayout
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    app:cardBackgroundColor="#00000000"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/shimmer_container_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        app:shimmer_auto_start="true"
+                        app:shimmer_base_color="#ccc">
+
+                        <include layout="@layout/fill_in_ad_unifiled_small" />
+
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/flNativeSmallPlaceholder"
+                        style="@style/NativeAdsView" />
+
+                </androidx.cardview.widget.CardView>
+
+                <FrameLayout
+                    android:id="@+id/flBannerSmallPlaceholder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

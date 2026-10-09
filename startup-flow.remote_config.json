@@ -1,0 +1,304 @@
+{
+    "normal_user":  {
+                        "App_PrivacyPolicy":  "https://example.com/privacy",
+                        "Splash_Ad_LoadType":  "Appopen",
+                        "ADSClick":  3,
+                        "BacksClick":  3,
+                        "Native_ByPage":  1,
+                        "AdsBlocks":  false,
+                        "Coming_Soon":  false,
+                        "ExitDialog":  true,
+                        "Firebaseanalytics":  true,
+                        "Update_Coming_Soon":  false,
+                        "consent_form_show_screen":  "Splash",
+                        "inter_ads_load_type":  "PreLoad",
+                        "native_adAdPlacements_load_type":  "PreLoad",
+                        "banner_ads_load_type":  "PreLoad",
+                        "appopen_ads_load_type":  "PreLoad",
+                        "show_intro_screen_flow":  [
+                                                       "Language",
+                                                       "OnBoarding",
+                                                       "PolicyScreen",
+                                                       "Home"
+                                                   ],
+                        "default_launcher_show":  false,
+                        "screen":  {
+                                       "ads_layout":  {
+                                                          "button_margin":  "10",
+                                                          "light_mode":  {
+                                                                             "Native_Ads_Button_Color":  "#015D2D",
+                                                                             "Native_Ad_Background_Color":  "#FFFFFF",
+                                                                             "Native_Ad_All_Text_Color":  "#000000",
+                                                                             "Native_Ad_Button_Text_Color":  "#FFFFFF"
+                                                                         },
+                                                          "dark_mode":  {
+                                                                            "Native_Ads_Button_Color":  "#3D9C5E",
+                                                                            "Native_Ad_Background_Color":  "#121212",
+                                                                            "Native_Ad_All_Text_Color":  "#FFFFFF",
+                                                                            "Native_Ad_Button_Text_Color":  "#FFFFFF"
+                                                                        }
+                                                      },
+                                       "splash_screen":  {
+                                                             "splash_app_open_ads_show":  true,
+                                                             "splash_app_open_after_count":  1,
+                                                             "app_open_show_in_background":  true,
+                                                             "app_open_daily_show_count":  5,
+                                                             "app_open_id":  "ca-app-pub-3940256099942544/9257395921",
+                                                             "splash_ads_type":  "native",
+                                                             "splash_native_id":  "ca-app-pub-3940256099942544/2247696110",
+                                                             "splash_banner_id":  "ca-app-pub-3940256099942544/6300978111",
+                                                             "splash_screen_bottom_ad_show":  true
+                                                         },
+                                       "language_screen":  {
+                                                               "splash_to_language":  true,
+                                                               "language_screen_bottom_ad_show":  true,
+                                                               "language_ads_type":  "native",
+                                                               "language_inter_ads_show":  true,
+                                                               "language_native_id":  "ca-app-pub-3940256099942544/2247696110",
+                                                               "language_banner_id":  "ca-app-pub-3940256099942544/6300978111"
+                                                           },
+                                       "onboarding_intro":  {
+                                                                "onboarding_count_show":  3,
+                                                                "onboarding_ads_type":  "native",
+                                                                "onboarding_inter_ads_show":  true,
+                                                                "onboarding_screen_bottom_ad_show":  true,
+                                                                "onboarding_native_id":  "ca-app-pub-3940256099942544/2247696110",
+                                                                "onboarding_banner_id":  "ca-app-pub-3940256099942544/6300978111"
+                                                            },
+                                       "permission_screen":  {
+                                                                 "permission_small_ads_show":  true,
+                                                                 "permission_ads_type":  "native",
+                                                                 "permission_native_id":  "ca-app-pub-3940256099942544/2247696110",
+                                                                 "permission_banner_id":  "ca-app-pub-3940256099942544/6300978111"
+                                                             },
+                                       "default_permission_screem":  {
+                                                                         "default_permission_bottom_ads_show":  true,
+                                                                         "default_permission_ads_type":  "native",
+                                                                         "default_permission_native_id":  "ca-app-pub-3940256099942544/2247696110",
+                                                                         "default_permission_banner_id":  "ca-app-pub-3940256099942544/6300978111",
+                                                                         "default_permission_button_ads_show":  true,
+                                                                         "default_permission_button_ads_type":  "Appopen"
+                                                                     },
+                                       "home_screen":  {
+                                                           "home_screen_bottom_show":  true,
+                                                           "home_screen_ads_type":  "native",
+                                                           "home_native_id":  "ca-app-pub-3940256099942544/2247696110",
+                                                           "home_banner_id":  "ca-app-pub-3940256099942544/6300978111"
+                                                       },
+                                       "launcher_home_screen":  {
+                                                                    "swipe_inter_show":  false,
+                                                                    "swipe_inter_count":  3,
+                                                                    "launcher_ads_type":  "native",
+                                                                    "launcher_native_id":  "ca-app-pub-3940256099942544/2247696110",
+                                                                    "launcher_banner_id":  "ca-app-pub-3940256099942544/6300978111",
+                                                                    "bottom_drawer_ads_show":  true
+                                                                },
+                                       "setting_screen":  {
+                                                              "setting_bottom_ads_show":  true,
+                                                              "setting_ads_type":  "native",
+                                                              "setting_native_id":  "ca-app-pub-3940256099942544/2247696110",
+                                                              "setting_banner_id":  "ca-app-pub-3940256099942544/6300978111"
+                                                          },
+                                       "callend_screen":  {
+                                                              "is_callend_show":  true,
+                                                              "is_callend_bottom_ad_show":  true,
+                                                              "callend_bottom_ads_type":  "native",
+                                                              "callend_banner_ad_id":  "ca-app-pub-3940256099942544/6300978111",
+                                                              "callend_native_ad_id":  "ca-app-pub-3940256099942544/2247696110",
+                                                              "notification_install_days":  1,
+                                                              "notification_call_install_days":  1,
+                                                              "notification_call_overlay_install_days":  1,
+                                                              "country_get_with_ip":  false,
+                                                              "close_button_show_on_full_native_ads":  true,
+                                                              "notification_country":  [
+
+                                                                                       ],
+                                                              "notification_call_country":  [
+
+                                                                                            ],
+                                                              "notification_call_overlay_country":  [
+
+                                                                                                    ],
+                                                              "call_end_bacK_inter":  {
+                                                                                          "call_end_inter_ads_show":  true,
+                                                                                          "notification_screen_back_ads_show":  true,
+                                                                                          "call_end_inter_ads_type":  "Inter",
+                                                                                          "call_end_inter_day_count":  5,
+                                                                                          "callend_again_open_count":  1,
+                                                                                          "call_end_inter_active_total_show_count":  5,
+                                                                                          "callend_inter_ad_id":  "ca-app-pub-3940256099942544/1033173712",
+                                                                                          "call_end_inter_ads_show_country":  [
+
+                                                                                                                              ]
+                                                                                      }
+                                                          },
+                                       "other_screen":  {
+                                                            "inter_first_time":  "ca-app-pub-3940256099942544/1033173712",
+                                                            "inter_second_time":  "ca-app-pub-3940256099942544/1033173712",
+                                                            "other_native_id":  "ca-app-pub-3940256099942544/2247696110",
+                                                            "other_banner_id":  "ca-app-pub-3940256099942544/6300978111",
+                                                            "other_bottom_ads_type":  "native",
+                                                            "other_bottom_ads_show":  true,
+                                                            "inter_ads_show":  true,
+                                                            "inter_ads_show_on_back":  true,
+                                                            "exit_native_id":  "ca-app-pub-3940256099942544/2247696110"
+                                                        },
+                                       "update_app":  {
+                                                          "in_app_update_show":  false,
+                                                          "in_app_update_type":  "flexible",
+                                                          "in_appp_dailog_daily_show_count":  1
+                                                      }
+                                   }
+                    },
+    "paid_user":  {
+                      "App_PrivacyPolicy":  "https://example.com/privacy",
+                      "Splash_Ad_LoadType":  "Appopen",
+                      "ADSClick":  3,
+                      "BacksClick":  3,
+                      "Native_ByPage":  1,
+                      "AdsBlocks":  false,
+                      "Coming_Soon":  false,
+                      "ExitDialog":  true,
+                      "Firebaseanalytics":  true,
+                      "Update_Coming_Soon":  false,
+                      "consent_form_show_screen":  "Splash",
+                      "inter_ads_load_type":  "PreLoad",
+                      "native_adAdPlacements_load_type":  "PreLoad",
+                      "banner_ads_load_type":  "PreLoad",
+                      "appopen_ads_load_type":  "PreLoad",
+                      "show_intro_screen_flow":  [
+                                                     "Language",
+                                                     "OnBoarding",
+                                                     "PolicyScreen",
+                                                     "Home"
+                                                 ],
+                      "default_launcher_show":  false,
+                      "screen":  {
+                                     "ads_layout":  {
+                                                        "button_margin":  "10",
+                                                        "light_mode":  {
+                                                                           "Native_Ads_Button_Color":  "#015D2D",
+                                                                           "Native_Ad_Background_Color":  "#FFFFFF",
+                                                                           "Native_Ad_All_Text_Color":  "#000000",
+                                                                           "Native_Ad_Button_Text_Color":  "#FFFFFF"
+                                                                       },
+                                                        "dark_mode":  {
+                                                                          "Native_Ads_Button_Color":  "#3D9C5E",
+                                                                          "Native_Ad_Background_Color":  "#121212",
+                                                                          "Native_Ad_All_Text_Color":  "#FFFFFF",
+                                                                          "Native_Ad_Button_Text_Color":  "#FFFFFF"
+                                                                      }
+                                                    },
+                                     "splash_screen":  {
+                                                           "splash_app_open_ads_show":  true,
+                                                           "splash_app_open_after_count":  1,
+                                                           "app_open_show_in_background":  true,
+                                                           "app_open_daily_show_count":  5,
+                                                           "app_open_id":  "ca-app-pub-3940256099942544/9257395921",
+                                                           "splash_ads_type":  "native",
+                                                           "splash_native_id":  "ca-app-pub-3940256099942544/2247696110",
+                                                           "splash_banner_id":  "ca-app-pub-3940256099942544/6300978111",
+                                                           "splash_screen_bottom_ad_show":  true
+                                                       },
+                                     "language_screen":  {
+                                                             "splash_to_language":  true,
+                                                             "language_screen_bottom_ad_show":  true,
+                                                             "language_ads_type":  "native",
+                                                             "language_inter_ads_show":  true,
+                                                             "language_native_id":  "ca-app-pub-3940256099942544/2247696110",
+                                                             "language_banner_id":  "ca-app-pub-3940256099942544/6300978111"
+                                                         },
+                                     "onboarding_intro":  {
+                                                              "onboarding_count_show":  3,
+                                                              "onboarding_ads_type":  "native",
+                                                              "onboarding_inter_ads_show":  true,
+                                                              "onboarding_screen_bottom_ad_show":  true,
+                                                              "onboarding_native_id":  "ca-app-pub-3940256099942544/2247696110",
+                                                              "onboarding_banner_id":  "ca-app-pub-3940256099942544/6300978111"
+                                                          },
+                                     "permission_screen":  {
+                                                               "permission_small_ads_show":  true,
+                                                               "permission_ads_type":  "native",
+                                                               "permission_native_id":  "ca-app-pub-3940256099942544/2247696110",
+                                                               "permission_banner_id":  "ca-app-pub-3940256099942544/6300978111"
+                                                           },
+                                     "default_permission_screem":  {
+                                                                       "default_permission_bottom_ads_show":  true,
+                                                                       "default_permission_ads_type":  "native",
+                                                                       "default_permission_native_id":  "ca-app-pub-3940256099942544/2247696110",
+                                                                       "default_permission_banner_id":  "ca-app-pub-3940256099942544/6300978111",
+                                                                       "default_permission_button_ads_show":  true,
+                                                                       "default_permission_button_ads_type":  "Appopen"
+                                                                   },
+                                     "home_screen":  {
+                                                         "home_screen_bottom_show":  true,
+                                                         "home_screen_ads_type":  "native",
+                                                         "home_native_id":  "ca-app-pub-3940256099942544/2247696110",
+                                                         "home_banner_id":  "ca-app-pub-3940256099942544/6300978111"
+                                                     },
+                                     "launcher_home_screen":  {
+                                                                  "swipe_inter_show":  false,
+                                                                  "swipe_inter_count":  3,
+                                                                  "launcher_ads_type":  "native",
+                                                                  "launcher_native_id":  "ca-app-pub-3940256099942544/2247696110",
+                                                                  "launcher_banner_id":  "ca-app-pub-3940256099942544/6300978111",
+                                                                  "bottom_drawer_ads_show":  true
+                                                              },
+                                     "setting_screen":  {
+                                                            "setting_bottom_ads_show":  true,
+                                                            "setting_ads_type":  "native",
+                                                            "setting_native_id":  "ca-app-pub-3940256099942544/2247696110",
+                                                            "setting_banner_id":  "ca-app-pub-3940256099942544/6300978111"
+                                                        },
+                                     "callend_screen":  {
+                                                            "is_callend_show":  true,
+                                                            "is_callend_bottom_ad_show":  true,
+                                                            "callend_bottom_ads_type":  "native",
+                                                            "callend_banner_ad_id":  "ca-app-pub-3940256099942544/6300978111",
+                                                            "callend_native_ad_id":  "ca-app-pub-3940256099942544/2247696110",
+                                                            "notification_install_days":  1,
+                                                            "notification_call_install_days":  1,
+                                                            "notification_call_overlay_install_days":  1,
+                                                            "country_get_with_ip":  false,
+                                                            "close_button_show_on_full_native_ads":  true,
+                                                            "notification_country":  [
+
+                                                                                     ],
+                                                            "notification_call_country":  [
+
+                                                                                          ],
+                                                            "notification_call_overlay_country":  [
+
+                                                                                                  ],
+                                                            "call_end_bacK_inter":  {
+                                                                                        "call_end_inter_ads_show":  true,
+                                                                                        "notification_screen_back_ads_show":  true,
+                                                                                        "call_end_inter_ads_type":  "Inter",
+                                                                                        "call_end_inter_day_count":  5,
+                                                                                        "callend_again_open_count":  1,
+                                                                                        "call_end_inter_active_total_show_count":  5,
+                                                                                        "callend_inter_ad_id":  "ca-app-pub-3940256099942544/1033173712",
+                                                                                        "call_end_inter_ads_show_country":  [
+
+                                                                                                                            ]
+                                                                                    }
+                                                        },
+                                     "other_screen":  {
+                                                          "inter_first_time":  "ca-app-pub-3940256099942544/1033173712",
+                                                          "inter_second_time":  "ca-app-pub-3940256099942544/1033173712",
+                                                          "other_native_id":  "ca-app-pub-3940256099942544/2247696110",
+                                                          "other_banner_id":  "ca-app-pub-3940256099942544/6300978111",
+                                                          "other_bottom_ads_type":  "native",
+                                                          "other_bottom_ads_show":  true,
+                                                          "inter_ads_show":  true,
+                                                          "inter_ads_show_on_back":  true,
+                                                          "exit_native_id":  "ca-app-pub-3940256099942544/2247696110"
+                                                      },
+                                     "update_app":  {
+                                                        "in_app_update_show":  false,
+                                                        "in_app_update_type":  "flexible",
+                                                        "in_appp_dailog_daily_show_count":  1
+                                                    }
+                                 }
+                  }
+}
