@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Figma asset (frame19.svg): glyph 18.6667 x 18.6667 in a 32px icon box -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="@dimen/_24sdp"
-    android:height="@dimen/_24sdp"
+    android:width="@dimen/_18sdp"
+    android:height="@dimen/_18sdp"
     android:viewportWidth="24"
     android:viewportHeight="24">
     <group android:translateX="5" android:translateY="5" android:scaleX="0.75" android:scaleY="0.75">

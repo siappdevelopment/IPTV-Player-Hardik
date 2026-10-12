@@ -6,10 +6,10 @@ import android.util.Log
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.iptvplayer.xtreamiptv.myiptvpro.data.local.database.AppDatabase
-import com.iptvplayer.xtreamiptv.myiptvpro.data.remote.PlaylistDownloader
-import com.iptvplayer.xtreamiptv.myiptvpro.data.repository.PlaylistRepository
-import com.iptvplayer.xtreamiptv.myiptvpro.domain.parser.M3uParser
+import com.iptvplayer.xtreamiptv.myiptvpro.IPTV.data.local.database.AppDatabase
+import com.iptvplayer.xtreamiptv.myiptvpro.IPTV.data.remote.PlaylistDownloader
+import com.iptvplayer.xtreamiptv.myiptvpro.IPTV.data.repository.PlaylistRepository
+import com.iptvplayer.xtreamiptv.myiptvpro.IPTV.domain.parser.M3uParser
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert.assertEquals

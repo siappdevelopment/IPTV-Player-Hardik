@@ -8,15 +8,15 @@
 
     <LinearLayout
         android:id="@+id/headerRow"
-        android:layout_width="@dimen/_0sdp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/color_background_deep"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:paddingStart="@dimen/screen_padding"
-        android:paddingTop="@dimen/_6sdp"
+        android:paddingTop="@dimen/_5sdp"
         android:paddingEnd="@dimen/screen_padding"
-        android:paddingBottom="@dimen/_14sdp"
+        android:paddingBottom="@dimen/_11sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -28,9 +28,9 @@
             android:src="@drawable/ic_arrow_back" />
 
         <LinearLayout
-            android:layout_width="@dimen/_0sdp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_9sdp"
             android:layout_weight="1"
             android:orientation="vertical">
 
@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:maxLines="1"
-                android:textSize="@dimen/_18sdp"
+                android:textSize="@dimen/_14sdp"
                 android:fontFamily="@font/plus_jakarta_sans_semibold" />
 
             <TextView
@@ -55,8 +55,8 @@
 
     <FrameLayout
         android:id="@+id/playerContainer"
-        android:layout_width="@dimen/_0sdp"
-        android:layout_height="@dimen/_0sdp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/black"
         android:contentDescription="@string/cd_player_toggle_controls"
         app:layout_constraintDimensionRatio="16:9"
@@ -79,17 +79,44 @@
             android:layout_height="match_parent" />
     </FrameLayout>
 
+    <FrameLayout
+        android:id="@+id/headerHost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/screen_padding"
+        android:paddingEnd="@dimen/screen_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/playerContainer">
+
+        <include
+            android:id="@+id/channelHeader"
+            layout="@layout/item_player_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvChannels"
-        android:layout_width="@dimen/_0sdp"
-        android:layout_height="@dimen/_0sdp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:clipToPadding="false"
         android:overScrollMode="never"
         android:paddingStart="@dimen/screen_padding"
         android:paddingEnd="@dimen/screen_padding"
         android:paddingBottom="@dimen/spacing_xl"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomNative"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/playerContainer" />
+        app:layout_constraintTop_toBottomOf="@id/headerHost" />
+
+    <include
+        android:id="@+id/bottomNative"
+        layout="@layout/reso_layout_bottom_native"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

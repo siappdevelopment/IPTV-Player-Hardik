@@ -29,9 +29,9 @@
                 android:src="@drawable/ic_arrow_back" />
 
             <LinearLayout
-                android:layout_width="@dimen/_0sdp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginStart="@dimen/_9sdp"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -53,7 +53,7 @@
         <androidx.core.widget.NestedScrollView
             android:id="@+id/scroll"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_0sdp"
+            android:layout_height="0dp"
             android:layout_weight="1"
             android:clipToPadding="false"
             android:overScrollMode="never"
@@ -72,48 +72,72 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_tab_group"
                     android:orientation="horizontal"
-                    android:padding="@dimen/_4sdp">
+                    android:padding="@dimen/_3sdp">
 
-                    <com.iptvplayer.xtreamiptv.myiptvpro.ui.common.IconTextView
+                    <LinearLayout
                         android:id="@+id/tabUrl"
-                        app:iconSize="@dimen/_20sdp"
-                        style="@style/Text.BodyStrong"
-                        android:layout_width="@dimen/_0sdp"
-                        android:layout_height="@dimen/_46sdp"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_35sdp"
                         android:layout_weight="1"
                         android:background="@drawable/bg_tab_pill"
                         android:clickable="true"
-                        android:drawableStart="@drawable/ic_link"
-                        android:drawablePadding="@dimen/_8sdp"
-                        android:drawableTint="@color/selector_tab_text"
                         android:focusable="true"
                         android:gravity="center"
-                        android:text="@string/tab_import_url"
-                        android:textColor="@color/selector_tab_text" />
+                        android:orientation="horizontal">
 
-                    <com.iptvplayer.xtreamiptv.myiptvpro.ui.common.IconTextView
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_marginEnd="@dimen/_6sdp"
+                            android:duplicateParentState="true"
+                            android:importantForAccessibility="no"
+                            android:src="@drawable/ic_link"
+                            app:tint="@color/selector_tab_text" />
+
+                        <TextView
+                            style="@style/Text.BodyStrong"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:duplicateParentState="true"
+                            android:text="@string/tab_import_url"
+                            android:textColor="@color/selector_tab_text" />
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:id="@+id/tabFile"
-                        app:iconSize="@dimen/_20sdp"
-                        style="@style/Text.BodyStrong"
-                        android:layout_width="@dimen/_0sdp"
-                        android:layout_height="@dimen/_46sdp"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_35sdp"
                         android:layout_weight="1"
                         android:background="@drawable/bg_tab_pill"
                         android:clickable="true"
-                        android:drawableStart="@drawable/ic_upload_file"
-                        android:drawablePadding="@dimen/_8sdp"
-                        android:drawableTint="@color/selector_tab_text"
                         android:focusable="true"
                         android:gravity="center"
-                        android:text="@string/tab_upload_file"
-                        android:textColor="@color/selector_tab_text" />
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_marginEnd="@dimen/_6sdp"
+                            android:duplicateParentState="true"
+                            android:importantForAccessibility="no"
+                            android:src="@drawable/ic_upload_file"
+                            app:tint="@color/selector_tab_text" />
+
+                        <TextView
+                            style="@style/Text.BodyStrong"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:duplicateParentState="true"
+                            android:text="@string/tab_upload_file"
+                            android:textColor="@color/selector_tab_text" />
+                    </LinearLayout>
                 </LinearLayout>
 
                 <!-- name -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -121,22 +145,22 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/label_playlist_name"
-                        android:textSize="@dimen/_14sdp" />
+                        android:textSize="@dimen/_11sdp" />
 
                     <TextView
                         style="@style/Text.BodyStrong"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_marginStart="@dimen/_3sdp"
                         android:text="*"
                         android:textColor="@color/color_error"
-                        android:textSize="@dimen/_14sdp" />
+                        android:textSize="@dimen/_11sdp" />
                 </LinearLayout>
 
                 <FrameLayout
                     android:id="@+id/fieldName"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_56sdp"
+                    android:layout_height="@dimen/_43sdp"
                     android:layout_marginTop="@dimen/spacing_sm"
                     android:addStatesFromChildren="true"
                     android:background="@drawable/bg_input">
@@ -148,8 +172,8 @@
                         android:layout_height="match_parent"
                         android:hint="@string/hint_playlist_name"
                         android:inputType="textCapWords"
-                        android:paddingStart="@dimen/_16sdp"
-                        android:paddingEnd="@dimen/_16sdp" />
+                        android:paddingStart="@dimen/_12sdp"
+                        android:paddingEnd="@dimen/_12sdp" />
                 </FrameLayout>
 
                 <TextView
@@ -157,7 +181,7 @@
                     style="@style/Text.Error"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
                     android:drawableStart="@drawable/ic_error"
                     android:drawableTint="@color/color_error"
                     android:gravity="center_vertical"
@@ -173,7 +197,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
                         android:orientation="horizontal">
 
                         <TextView
@@ -181,33 +205,33 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/label_m3u_url"
-                            android:textSize="@dimen/_14sdp" />
+                            android:textSize="@dimen/_11sdp" />
 
                         <TextView
                             style="@style/Text.BodyStrong"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/_4sdp"
+                            android:layout_marginStart="@dimen/_3sdp"
                             android:text="*"
                             android:textColor="@color/color_error"
-                            android:textSize="@dimen/_14sdp" />
+                            android:textSize="@dimen/_11sdp" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/fieldUrl"
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/_56sdp"
+                        android:layout_height="@dimen/_43sdp"
                         android:layout_marginTop="@dimen/spacing_sm"
                         android:addStatesFromChildren="true"
                         android:background="@drawable/bg_input"
                         android:gravity="center_vertical"
                         android:orientation="horizontal"
-                        android:paddingStart="@dimen/_16sdp"
-                        android:paddingEnd="@dimen/_6sdp">
+                        android:paddingStart="@dimen/_12sdp"
+                        android:paddingEnd="@dimen/_5sdp">
 
                         <ImageView
-                            android:layout_width="@dimen/_20sdp"
-                            android:layout_height="@dimen/_20sdp"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
                             android:importantForAccessibility="no"
                             android:src="@drawable/ic_link"
                             app:tint="@color/color_accent_light" />
@@ -215,9 +239,9 @@
                         <EditText
                             android:id="@+id/etUrl"
                             style="@style/Input"
-                            android:layout_width="@dimen/_0sdp"
+                            android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginStart="@dimen/_8sdp"
                             android:layout_weight="1"
                             android:hint="@string/hint_m3u_url"
                             android:inputType="textUri" />
@@ -236,7 +260,7 @@
                         style="@style/Text.Error"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_6sdp"
                         android:drawableStart="@drawable/ic_error"
                         android:drawableTint="@color/color_error"
                         android:gravity="center_vertical"
@@ -247,21 +271,21 @@
                         style="@style/Text.Caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_6sdp"
                         android:text="@string/add_url_hint"
                         android:textColor="@color/color_text_tertiary"
-                        android:textSize="@dimen/_12_5sdp" />
+                        android:textSize="@dimen/_10sdp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
                         android:gravity="bottom"
                         android:orientation="horizontal">
 
                         <TextView
                             style="@style/Text.Subtitle"
-                            android:layout_width="@dimen/_0sdp"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="@string/add_suggested" />
@@ -293,7 +317,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
                         android:orientation="horizontal">
 
                         <TextView
@@ -301,16 +325,16 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/label_m3u_file"
-                            android:textSize="@dimen/_14sdp" />
+                            android:textSize="@dimen/_11sdp" />
 
                         <TextView
                             style="@style/Text.BodyStrong"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/_4sdp"
+                            android:layout_marginStart="@dimen/_3sdp"
                             android:text="*"
                             android:textColor="@color/color_error"
-                            android:textSize="@dimen/_14sdp" />
+                            android:textSize="@dimen/_11sdp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -323,17 +347,17 @@
                         android:focusable="true"
                         android:gravity="center_horizontal"
                         android:orientation="vertical"
-                        android:paddingStart="@dimen/_20sdp"
-                        android:paddingTop="@dimen/_28sdp"
-                        android:paddingEnd="@dimen/_20sdp"
-                        android:paddingBottom="@dimen/_28sdp">
+                        android:paddingStart="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_21sdp"
+                        android:paddingEnd="@dimen/_15sdp"
+                        android:paddingBottom="@dimen/_21sdp">
 
                         <ImageView
-                            android:layout_width="@dimen/_60sdp"
-                            android:layout_height="@dimen/_60sdp"
+                            android:layout_width="@dimen/_46sdp"
+                            android:layout_height="@dimen/_46sdp"
                             android:background="@drawable/bg_tile_raised"
                             android:importantForAccessibility="no"
-                            android:padding="@dimen/_15sdp"
+                            android:padding="@dimen/_11sdp"
                             android:src="@drawable/ic_upload_file"
                             app:tint="@color/color_accent_light" />
 
@@ -341,17 +365,17 @@
                             style="@style/Text.Subtitle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
                             android:text="@string/choose_m3u_file"
-                            android:textSize="@dimen/_16sdp" />
+                            android:textSize="@dimen/_12sdp" />
 
                         <TextView
                             style="@style/Text.Caption"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
                             android:text="@string/choose_m3u_hint"
-                            android:textSize="@dimen/_12_5sdp" />
+                            android:textSize="@dimen/_10sdp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -362,25 +386,25 @@
                         android:background="@drawable/bg_row_base"
                         android:gravity="center_vertical"
                         android:orientation="horizontal"
-                        android:paddingStart="@dimen/_12sdp"
-                        android:paddingTop="@dimen/_12sdp"
-                        android:paddingEnd="@dimen/_8sdp"
-                        android:paddingBottom="@dimen/_12sdp"
+                        android:paddingStart="@dimen/_9sdp"
+                        android:paddingTop="@dimen/_9sdp"
+                        android:paddingEnd="@dimen/_6sdp"
+                        android:paddingBottom="@dimen/_9sdp"
                         android:visibility="gone">
 
                         <ImageView
-                            android:layout_width="@dimen/_46sdp"
-                            android:layout_height="@dimen/_46sdp"
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
                             android:background="@drawable/bg_tile_high_14"
                             android:importantForAccessibility="no"
-                            android:padding="@dimen/_11sdp"
+                            android:padding="@dimen/_8sdp"
                             android:src="@drawable/ic_description"
                             app:tint="@color/color_accent_light" />
 
                         <LinearLayout
-                            android:layout_width="@dimen/_0sdp"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/_12sdp"
+                            android:layout_marginStart="@dimen/_9sdp"
                             android:layout_weight="1"
                             android:orientation="vertical">
 
@@ -397,14 +421,14 @@
                                 style="@style/Text.Caption"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_3sdp"
+                                android:layout_marginTop="@dimen/_2sdp"
                                 android:drawableStart="@drawable/ic_check_circle"
-                                android:drawablePadding="@dimen/_5sdp"
+                                android:drawablePadding="@dimen/_4sdp"
                                 android:drawableTint="@color/color_success"
                                 android:gravity="center_vertical"
                                 android:text="@string/file_ready"
                                 android:textColor="@color/color_success"
-                                android:textSize="@dimen/_12_5sdp" />
+                                android:textSize="@dimen/_10sdp" />
                         </LinearLayout>
 
                         <ImageView
@@ -419,8 +443,8 @@
                         android:id="@+id/btnChangeFile"
                         style="@style/Button.Text"
                         android:layout_width="wrap_content"
-                        android:layout_height="@dimen/_36sdp"
-                        android:minHeight="@dimen/_36sdp"
+                        android:layout_height="@dimen/_27sdp"
+                        android:minHeight="@dimen/_27sdp"
                         android:text="@string/choose_different_file"
                         android:visibility="gone" />
 
@@ -429,7 +453,7 @@
                         style="@style/Text.Error"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_6sdp"
                         android:drawableStart="@drawable/ic_error"
                         android:drawableTint="@color/color_error"
                         android:gravity="center_vertical"
@@ -441,23 +465,23 @@
                     android:id="@+id/errorBanner"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
                     android:background="@drawable/bg_error_banner"
                     android:orientation="horizontal"
-                    android:padding="@dimen/_16sdp"
+                    android:padding="@dimen/_12sdp"
                     android:visibility="gone">
 
                     <ImageView
-                        android:layout_width="@dimen/_24sdp"
-                        android:layout_height="@dimen/_24sdp"
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
                         android:importantForAccessibility="no"
                         android:src="@drawable/ic_wifi_off"
                         app:tint="@color/color_error" />
 
                     <LinearLayout
-                        android:layout_width="@dimen/_0sdp"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginStart="@dimen/_9sdp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -472,15 +496,16 @@
                             style="@style/Text"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_4sdp"
-                            app:lineHeight="@dimen/_19sdp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            app:lineHeight="@dimen/_15sdp"
                             android:text="@string/add_error_desc"
                             android:textColor="@color/color_text_soft"
-                            android:textSize="@dimen/_13sdp" />
+                            android:textSize="@dimen/_10sdp" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>
+
 
         <!-- CTA -->
         <FrameLayout
@@ -488,20 +513,39 @@
             android:layout_height="wrap_content"
             android:background="@color/color_background"
             android:paddingStart="@dimen/screen_padding"
-            android:paddingTop="@dimen/_12sdp"
+            android:paddingTop="@dimen/_9sdp"
             android:paddingEnd="@dimen/screen_padding"
-            android:paddingBottom="@dimen/_14sdp">
+            android:paddingBottom="@dimen/_11sdp">
 
-            <com.iptvplayer.xtreamiptv.myiptvpro.ui.common.IconTextView
+            <LinearLayout
                 android:id="@+id/btnAdd"
-                app:iconSize="@dimen/_22sdp"
                 style="@style/Button.Primary"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/button_height"
-                android:drawableEnd="@drawable/ic_add"
-                android:drawableTint="@color/white"
-                android:text="@string/action_add_playlist" />
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:fontFamily="@font/plus_jakarta_sans_semibold"
+                    android:text="@string/action_add_playlist"
+                    android:textSize="@dimen/_12sdp" />
+
+                <ImageView
+                    android:layout_width="@dimen/_17sdp"
+                    android:layout_height="@dimen/_17sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:duplicateParentState="true"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_add"
+                    app:tint="@color/white" />
+            </LinearLayout>
         </FrameLayout>
+
+        <include layout="@layout/reso_layout_medium_native" />
+
     </LinearLayout>
 
     <!-- loading -->
@@ -515,39 +559,40 @@
         android:visibility="gone">
 
         <LinearLayout
-            android:layout_width="@dimen/_280sdp"
+            android:layout_width="@dimen/_214sdp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@drawable/bg_loading_card"
             android:gravity="center_horizontal"
             android:orientation="vertical"
-            android:paddingStart="@dimen/_24sdp"
-            android:paddingTop="@dimen/_28sdp"
-            android:paddingEnd="@dimen/_24sdp"
-            android:paddingBottom="@dimen/_28sdp">
+            android:paddingStart="@dimen/_18sdp"
+            android:paddingTop="@dimen/_21sdp"
+            android:paddingEnd="@dimen/_18sdp"
+            android:paddingBottom="@dimen/_21sdp">
 
             <ProgressBar
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_40sdp"
+                android:layout_width="@dimen/_31sdp"
+                android:layout_height="@dimen/_31sdp"
                 android:indeterminateTint="@color/color_primary" />
 
             <TextView
                 style="@style/Text.Subtitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_11sdp"
                 android:text="@string/add_loading_title"
-                android:textSize="@dimen/_18sdp" />
+                android:textSize="@dimen/_14sdp" />
 
             <TextView
                 android:id="@+id/tvLoadingDesc"
                 style="@style/Text.Label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_11sdp"
                 android:gravity="center"
-                app:lineHeight="@dimen/_19_5sdp"
-                android:textSize="@dimen/_13_5sdp" />
+                app:lineHeight="@dimen/_15sdp"
+                android:textSize="@dimen/_10sdp" />
         </LinearLayout>
     </FrameLayout>
+
 </FrameLayout>

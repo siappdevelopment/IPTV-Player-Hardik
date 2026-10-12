@@ -13,10 +13,10 @@
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:paddingStart="@dimen/_20sdp"
-        android:paddingTop="@dimen/_8sdp"
-        android:paddingEnd="@dimen/_20sdp"
-        android:paddingBottom="@dimen/_16sdp">
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingTop="@dimen/_6sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_12sdp">
 
         <ImageView
             android:id="@+id/btnBack"
@@ -25,9 +25,9 @@
             android:src="@drawable/ic_arrow_back" />
 
         <LinearLayout
-            android:layout_width="@dimen/_0sdp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_9sdp"
             android:layout_weight="1"
             android:orientation="vertical">
 
@@ -36,7 +36,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/privacy_title"
-                android:textSize="@dimen/_20sdp" />
+                android:textSize="@dimen/_15sdp" />
 
             <TextView
                 style="@style/Text"
@@ -44,19 +44,19 @@
                 android:layout_height="wrap_content"
                 android:text="@string/privacy_updated"
                 android:textColor="@color/color_text_secondary"
-                android:textSize="@dimen/_13sdp" />
+                android:textSize="@dimen/_10sdp" />
         </LinearLayout>
     </LinearLayout>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_0sdp"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:clipToPadding="false"
         android:overScrollMode="never"
-        android:paddingStart="@dimen/_20sdp"
-        android:paddingEnd="@dimen/_20sdp"
-        android:paddingBottom="@dimen/_24sdp">
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_18sdp">
 
         <LinearLayout
             android:id="@+id/llPolicy"
@@ -69,16 +69,16 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_group_card"
                 android:orientation="horizontal"
-                android:padding="@dimen/_16sdp">
+                android:padding="@dimen/_12sdp">
 
                 <FrameLayout
-                    android:layout_width="@dimen/_42sdp"
-                    android:layout_height="@dimen/_42sdp"
+                    android:layout_width="@dimen/_32sdp"
+                    android:layout_height="@dimen/_32sdp"
                     android:background="@drawable/bg_gradient_tile_14">
 
                     <ImageView
-                        android:layout_width="@dimen/_22sdp"
-                        android:layout_height="@dimen/_22sdp"
+                        android:layout_width="@dimen/_17sdp"
+                        android:layout_height="@dimen/_17sdp"
                         android:layout_gravity="center"
                         android:importantForAccessibility="no"
                         android:src="@drawable/ic_shield"
@@ -87,15 +87,18 @@
 
                 <TextView
                     style="@style/Text"
-                    android:layout_width="@dimen/_0sdp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_14sdp"
+                    android:layout_marginStart="@dimen/_11sdp"
                     android:layout_weight="1"
                     android:text="@string/privacy_intro"
                     android:textColor="@color/color_text_soft"
-                    android:textSize="@dimen/_14sdp"
-                    app:lineHeight="@dimen/_21_5sdp" />
+                    android:textSize="@dimen/_11sdp"
+                    app:lineHeight="@dimen/_16sdp" />
             </LinearLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
+
+    <include layout="@layout/reso_layout_medium_native"/>
+
 </LinearLayout>

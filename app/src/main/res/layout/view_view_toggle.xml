@@ -5,37 +5,37 @@
     android:layout_height="wrap_content"
     android:background="@drawable/bg_segment_group"
     android:orientation="horizontal"
-    android:padding="@dimen/_3sdp">
+    android:padding="@dimen/_2sdp">
 
     <ImageView
         android:id="@+id/btnViewCards"
-        android:layout_width="@dimen/_40sdp"
-        android:layout_height="@dimen/_40sdp"
+        android:layout_width="@dimen/_31sdp"
+        android:layout_height="@dimen/_31sdp"
         android:background="@drawable/bg_segment"
         android:contentDescription="@string/cd_view_cards"
-        android:padding="@dimen/_9sdp"
+        android:padding="@dimen/_7sdp"
         android:src="@drawable/sel_view_agenda"
         app:tint="@color/selector_segment_icon" />
 
     <ImageView
         android:id="@+id/btnViewGrid"
-        android:layout_width="@dimen/_40sdp"
-        android:layout_height="@dimen/_40sdp"
+        android:layout_width="@dimen/_31sdp"
+        android:layout_height="@dimen/_31sdp"
         android:layout_marginStart="@dimen/_2sdp"
         android:background="@drawable/bg_segment"
         android:contentDescription="@string/cd_view_grid"
-        android:padding="@dimen/_9sdp"
+        android:padding="@dimen/_7sdp"
         android:src="@drawable/sel_grid_view"
         app:tint="@color/selector_segment_icon" />
 
     <ImageView
         android:id="@+id/btnViewList"
-        android:layout_width="@dimen/_40sdp"
-        android:layout_height="@dimen/_40sdp"
+        android:layout_width="@dimen/_31sdp"
+        android:layout_height="@dimen/_31sdp"
         android:layout_marginStart="@dimen/_2sdp"
         android:background="@drawable/bg_segment"
         android:contentDescription="@string/cd_view_list"
-        android:padding="@dimen/_9sdp"
+        android:padding="@dimen/_7sdp"
         android:src="@drawable/sel_view_list"
         app:tint="@color/selector_segment_icon" />
 </LinearLayout>

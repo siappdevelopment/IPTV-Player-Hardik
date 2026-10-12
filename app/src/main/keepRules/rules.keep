@@ -10,3 +10,16 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+
+# DefaultLanguageText reads R.string fields by reflection (launcher fragments kept in English)
+-keep class com.iptvplayer.xtreamiptv.myiptvpro.R$string { *; }
+
+# Strip all android.util.Log calls from release builds
+-assumenosideeffects class android.util.Log {
+    public static int v(...);
+    public static int d(...);
+    public static int i(...);
+    public static int w(...);
+    public static int e(...);
+    public static int wtf(...);
+}

@@ -5,11 +5,12 @@ import android.net.Uri
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.iptvplayer.xtreamiptv.myiptvpro.data.local.database.AppDatabase
-import com.iptvplayer.xtreamiptv.myiptvpro.data.remote.ImportException
-import com.iptvplayer.xtreamiptv.myiptvpro.data.remote.ImportFailure
-import com.iptvplayer.xtreamiptv.myiptvpro.data.remote.PlaylistDownloader
-import com.iptvplayer.xtreamiptv.myiptvpro.data.repository.PlaylistRepository
+import com.iptvplayer.xtreamiptv.myiptvpro.IPTV.data.local.entity.FavoriteEntity
+import com.iptvplayer.xtreamiptv.myiptvpro.IPTV.data.local.database.AppDatabase
+import com.iptvplayer.xtreamiptv.myiptvpro.IPTV.data.remote.ImportException
+import com.iptvplayer.xtreamiptv.myiptvpro.IPTV.data.remote.ImportFailure
+import com.iptvplayer.xtreamiptv.myiptvpro.IPTV.data.remote.PlaylistDownloader
+import com.iptvplayer.xtreamiptv.myiptvpro.IPTV.data.repository.PlaylistRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.delay
@@ -259,7 +260,7 @@ class PlaylistImportTest {
     @Test
     fun deletingAPlaylist_removesItsChannelsAndOrphanFavorites() = runBlocking {
         val result = repo.importFromUrl("D", url("/ok"))
-        db.favoriteDao().add(com.iptvplayer.xtreamiptv.myiptvpro.data.local.entity.FavoriteEntity("https://s/1.m3u8", 1))
+        db.favoriteDao().add(FavoriteEntity("https://s/1.m3u8", 1))
         repo.deletePlaylist(result.playlistId)
         assertTrue(repo.observePlaylists().first().isEmpty())
         assertFalse(db.channelDao().observeAll("").first().any { it.playlistId == result.playlistId })
@@ -269,7 +270,7 @@ class PlaylistImportTest {
     @Test
     fun refresh_replacesChannels_andKeepsFavorites() = runBlocking {
         val result = repo.importFromUrl("Ref", url("/ok"))
-        db.favoriteDao().add(com.iptvplayer.xtreamiptv.myiptvpro.data.local.entity.FavoriteEntity("https://s/2.m3u8", 1))
+        db.favoriteDao().add(FavoriteEntity("https://s/2.m3u8", 1))
         assertEquals(4, repo.refreshPlaylist(result.playlistId))
         assertEquals(4, db.channelDao().observeByPlaylist(result.playlistId).first().size)
         assertEquals(listOf("https://s/2.m3u8"), db.favoriteDao().observeUrls().first())

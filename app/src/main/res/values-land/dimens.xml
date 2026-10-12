@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="banner_height">@dimen/_120sdp</dimen>
+    <dimen name="banner_height">@dimen/_92sdp</dimen>
 </resources>

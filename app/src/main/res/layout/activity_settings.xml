@@ -27,118 +27,314 @@
             style="@style/Text.Title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_9sdp"
             android:text="@string/settings_title" />
     </LinearLayout>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_0sdp"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:clipToPadding="false"
         android:overScrollMode="never"
         android:paddingStart="@dimen/screen_padding"
         android:paddingEnd="@dimen/screen_padding"
-        android:paddingBottom="@dimen/_24sdp">
+        android:paddingBottom="@dimen/_18sdp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- GENERAL -->
-            <TextView
-                style="@style/Text.Section"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingStart="@dimen/_4sdp"
-                android:text="@string/settings_section_general" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:background="@drawable/bg_group_card"
-                android:clipToOutline="true"
-                android:orientation="vertical">
-
-                <include
-                    android:id="@+id/rowLanguage"
-                    layout="@layout/item_setting_row" />
-            </LinearLayout>
-
             <!-- PLAYBACK -->
             <TextView
                 style="@style/Text.Section"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_22sdp"
-                android:paddingStart="@dimen/_4sdp"
+                android:paddingStart="@dimen/_3sdp"
                 android:text="@string/settings_section_playback" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
                 android:background="@drawable/bg_group_card"
                 android:clipToOutline="true"
                 android:orientation="vertical">
 
-                <include
+                <LinearLayout
                     android:id="@+id/rowResume"
-                    layout="@layout/item_setting_switch" />
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_49sdp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingEnd="@dimen/_12sdp">
+
+                    <ImageView
+                        android:id="@+id/ivResume"
+                        android:src="@drawable/ic_play_arrow"
+                        android:layout_width="@dimen/_29sdp"
+                        android:layout_height="@dimen/_29sdp"
+                        android:background="@drawable/bg_tile_high"
+                        android:importantForAccessibility="no"
+                        android:padding="@dimen/_6sdp"
+                        app:tint="@color/color_accent_light" />
+
+                    <TextView
+                        android:id="@+id/tvResumeTitle"
+                        android:text="@string/settings_resume"
+                        style="@style/Text.BodyStrong"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_11sdp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1" />
+
+                    <com.iptvplayer.xtreamiptv.myiptvpro.IPTV.ui.common.PillSwitch
+                        android:id="@+id/switchResume"
+                        android:layout_width="@dimen/_37sdp"
+                        android:layout_height="@dimen/_21sdp"
+                        android:clickable="false"
+                        android:focusable="false" />
+                </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_1sdp"
-                    android:layout_marginStart="@dimen/_68sdp"
+                    android:layout_marginStart="@dimen/_52sdp"
                     android:background="@color/color_divider" />
 
-                <include
+                <LinearLayout
                     android:id="@+id/rowHardware"
-                    layout="@layout/item_setting_switch" />
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_49sdp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingEnd="@dimen/_12sdp">
+
+                    <ImageView
+                        android:id="@+id/ivHardware"
+                        android:src="@drawable/ic_memory"
+                        android:layout_width="@dimen/_29sdp"
+                        android:layout_height="@dimen/_29sdp"
+                        android:background="@drawable/bg_tile_high"
+                        android:importantForAccessibility="no"
+                        android:padding="@dimen/_6sdp"
+                        app:tint="@color/color_accent_light" />
+
+                    <TextView
+                        android:id="@+id/tvHardwareTitle"
+                        android:text="@string/settings_hardware"
+                        style="@style/Text.BodyStrong"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_11sdp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1" />
+
+                    <com.iptvplayer.xtreamiptv.myiptvpro.IPTV.ui.common.PillSwitch
+                        android:id="@+id/switchHardware"
+                        android:layout_width="@dimen/_37sdp"
+                        android:layout_height="@dimen/_21sdp"
+                        android:clickable="false"
+                        android:focusable="false" />
+                </LinearLayout>
             </LinearLayout>
+
+            <include layout="@layout/reso_layout_big_native"/>
 
             <!-- PLAYLIST MANAGEMENT -->
             <TextView
                 style="@style/Text.Section"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_22sdp"
-                android:paddingStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_17sdp"
+                android:paddingStart="@dimen/_3sdp"
                 android:text="@string/settings_section_playlists" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
                 android:background="@drawable/bg_group_card"
                 android:clipToOutline="true"
                 android:orientation="vertical">
 
-                <include
+                <LinearLayout
                     android:id="@+id/rowManage"
-                    layout="@layout/item_setting_row" />
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_49sdp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingEnd="@dimen/_12sdp">
+
+                    <ImageView
+                        android:id="@+id/ivManage"
+                        android:src="@drawable/ic_video_library"
+                        android:layout_width="@dimen/_29sdp"
+                        android:layout_height="@dimen/_29sdp"
+                        android:background="@drawable/bg_tile_high"
+                        android:importantForAccessibility="no"
+                        android:padding="@dimen/_6sdp"
+                        app:tint="@color/color_accent_light" />
+
+                    <TextView
+                        android:id="@+id/tvManageTitle"
+                        android:text="@string/settings_manage_playlists"
+                        style="@style/Text.BodyStrong"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_11sdp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1" />
+
+                    <TextView
+                        android:id="@+id/tvManageValue"
+                        style="@style/Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:textColor="@color/color_text_secondary"
+                        android:textSize="@dimen/_11sdp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ivManageTrail"
+                        android:layout_width="@dimen/_17sdp"
+                        android:layout_height="@dimen/_17sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_chevron_right"
+                        app:tint="@color/color_text_tertiary" />
+                </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_1sdp"
-                    android:layout_marginStart="@dimen/_68sdp"
+                    android:layout_marginStart="@dimen/_52sdp"
                     android:background="@color/color_divider" />
 
-                <include
+                <LinearLayout
                     android:id="@+id/rowRefresh"
-                    layout="@layout/item_setting_row" />
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_49sdp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingEnd="@dimen/_12sdp">
+
+                    <ImageView
+                        android:id="@+id/ivRefresh"
+                        android:src="@drawable/ic_sync"
+                        android:layout_width="@dimen/_29sdp"
+                        android:layout_height="@dimen/_29sdp"
+                        android:background="@drawable/bg_tile_high"
+                        android:importantForAccessibility="no"
+                        android:padding="@dimen/_6sdp"
+                        app:tint="@color/color_accent_light" />
+
+                    <TextView
+                        android:id="@+id/tvRefreshTitle"
+                        android:text="@string/settings_refresh_playlists"
+                        style="@style/Text.BodyStrong"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_11sdp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1" />
+
+                    <TextView
+                        android:id="@+id/tvRefreshValue"
+                        style="@style/Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:textColor="@color/color_text_secondary"
+                        android:textSize="@dimen/_11sdp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ivRefreshTrail"
+                        android:layout_width="@dimen/_17sdp"
+                        android:layout_height="@dimen/_17sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_chevron_right"
+                        app:tint="@color/color_text_tertiary" />
+                </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_1sdp"
-                    android:layout_marginStart="@dimen/_68sdp"
+                    android:layout_marginStart="@dimen/_52sdp"
                     android:background="@color/color_divider" />
 
-                <include
+                <LinearLayout
                     android:id="@+id/rowClearHistory"
-                    layout="@layout/item_setting_row" />
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_49sdp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingEnd="@dimen/_12sdp">
+
+                    <ImageView
+                        android:id="@+id/ivClearHistory"
+                        android:src="@drawable/ic_history_toggle_off"
+                        android:layout_width="@dimen/_29sdp"
+                        android:layout_height="@dimen/_29sdp"
+                        android:background="@drawable/bg_tile_error"
+                        android:importantForAccessibility="no"
+                        android:padding="@dimen/_6sdp"
+                        app:tint="@color/color_error" />
+
+                    <TextView
+                        android:id="@+id/tvClearHistoryTitle"
+                        android:text="@string/settings_clear_history"
+                        style="@style/Text.BodyStrong"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_11sdp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1" />
+
+                    <TextView
+                        android:id="@+id/tvClearHistoryValue"
+                        style="@style/Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:textColor="@color/color_text_secondary"
+                        android:textSize="@dimen/_11sdp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ivClearHistoryTrail"
+                        android:layout_width="@dimen/_17sdp"
+                        android:layout_height="@dimen/_17sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_chevron_right"
+                        app:tint="@color/color_text_tertiary" />
+                </LinearLayout>
             </LinearLayout>
 
             <!-- ABOUT -->
@@ -146,52 +342,247 @@
                 style="@style/Text.Section"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_22sdp"
-                android:paddingStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_17sdp"
+                android:paddingStart="@dimen/_3sdp"
                 android:text="@string/settings_section_about" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
                 android:background="@drawable/bg_group_card"
                 android:clipToOutline="true"
                 android:orientation="vertical">
 
-                <include
+                <LinearLayout
                     android:id="@+id/rowPrivacy"
-                    layout="@layout/item_setting_row" />
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_49sdp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingEnd="@dimen/_12sdp">
+
+                    <ImageView
+                        android:id="@+id/ivPrivacy"
+                        android:src="@drawable/ic_shield"
+                        android:layout_width="@dimen/_29sdp"
+                        android:layout_height="@dimen/_29sdp"
+                        android:background="@drawable/bg_tile_high"
+                        android:importantForAccessibility="no"
+                        android:padding="@dimen/_6sdp"
+                        app:tint="@color/color_accent_light" />
+
+                    <TextView
+                        android:id="@+id/tvPrivacyTitle"
+                        android:text="@string/settings_privacy"
+                        style="@style/Text.BodyStrong"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_11sdp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1" />
+
+                    <TextView
+                        android:id="@+id/tvPrivacyValue"
+                        style="@style/Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:textColor="@color/color_text_secondary"
+                        android:textSize="@dimen/_11sdp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ivPrivacyTrail"
+                        android:layout_width="@dimen/_17sdp"
+                        android:layout_height="@dimen/_17sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_chevron_right"
+                        app:tint="@color/color_text_tertiary" />
+                </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_1sdp"
-                    android:layout_marginStart="@dimen/_68sdp"
+                    android:layout_marginStart="@dimen/_52sdp"
                     android:background="@color/color_divider" />
 
-                <include
+                <LinearLayout
                     android:id="@+id/rowRate"
-                    layout="@layout/item_setting_row" />
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_49sdp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingEnd="@dimen/_12sdp">
+
+                    <ImageView
+                        android:id="@+id/ivRate"
+                        android:src="@drawable/ic_star"
+                        android:layout_width="@dimen/_29sdp"
+                        android:layout_height="@dimen/_29sdp"
+                        android:background="@drawable/bg_tile_high"
+                        android:importantForAccessibility="no"
+                        android:padding="@dimen/_6sdp"
+                        app:tint="@color/color_accent_light" />
+
+                    <TextView
+                        android:id="@+id/tvRateTitle"
+                        android:text="@string/settings_rate"
+                        style="@style/Text.BodyStrong"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_11sdp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1" />
+
+                    <TextView
+                        android:id="@+id/tvRateValue"
+                        style="@style/Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:textColor="@color/color_text_secondary"
+                        android:textSize="@dimen/_11sdp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ivRateTrail"
+                        android:layout_width="@dimen/_17sdp"
+                        android:layout_height="@dimen/_17sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_chevron_right"
+                        app:tint="@color/color_text_tertiary" />
+                </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_1sdp"
-                    android:layout_marginStart="@dimen/_68sdp"
+                    android:layout_marginStart="@dimen/_52sdp"
                     android:background="@color/color_divider" />
 
-                <include
+                <LinearLayout
                     android:id="@+id/rowShare"
-                    layout="@layout/item_setting_row" />
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_49sdp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingEnd="@dimen/_12sdp">
+
+                    <ImageView
+                        android:id="@+id/ivShare"
+                        android:src="@drawable/ic_share"
+                        android:layout_width="@dimen/_29sdp"
+                        android:layout_height="@dimen/_29sdp"
+                        android:background="@drawable/bg_tile_high"
+                        android:importantForAccessibility="no"
+                        android:padding="@dimen/_6sdp"
+                        app:tint="@color/color_accent_light" />
+
+                    <TextView
+                        android:id="@+id/tvShareTitle"
+                        android:text="@string/settings_share"
+                        style="@style/Text.BodyStrong"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_11sdp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1" />
+
+                    <TextView
+                        android:id="@+id/tvShareValue"
+                        style="@style/Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:textColor="@color/color_text_secondary"
+                        android:textSize="@dimen/_11sdp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ivShareTrail"
+                        android:layout_width="@dimen/_17sdp"
+                        android:layout_height="@dimen/_17sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_chevron_right"
+                        app:tint="@color/color_text_tertiary" />
+                </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_1sdp"
-                    android:layout_marginStart="@dimen/_68sdp"
+                    android:layout_marginStart="@dimen/_52sdp"
                     android:background="@color/color_divider" />
 
-                <include
+                <LinearLayout
                     android:id="@+id/rowAbout"
-                    layout="@layout/item_setting_row" />
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_49sdp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingEnd="@dimen/_12sdp">
+
+                    <ImageView
+                        android:id="@+id/ivAbout"
+                        android:src="@drawable/ic_info"
+                        android:layout_width="@dimen/_29sdp"
+                        android:layout_height="@dimen/_29sdp"
+                        android:background="@drawable/bg_tile_high"
+                        android:importantForAccessibility="no"
+                        android:padding="@dimen/_6sdp"
+                        app:tint="@color/color_accent_light" />
+
+                    <TextView
+                        android:id="@+id/tvAboutTitle"
+                        android:text="@string/settings_about"
+                        style="@style/Text.BodyStrong"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_11sdp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1" />
+
+                    <TextView
+                        android:id="@+id/tvAboutValue"
+                        style="@style/Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:textColor="@color/color_text_secondary"
+                        android:textSize="@dimen/_11sdp"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/ivAboutTrail"
+                        android:layout_width="@dimen/_17sdp"
+                        android:layout_height="@dimen/_17sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_chevron_right"
+                        app:tint="@color/color_text_tertiary" />
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
+
+    <include layout="@layout/reso_layout_bottom_native" />
+
 </LinearLayout>

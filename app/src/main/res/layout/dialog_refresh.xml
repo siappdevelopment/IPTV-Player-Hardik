@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:background="@drawable/bg_dialog"
     android:orientation="vertical"
-    android:padding="@dimen/_22sdp">
+    android:padding="@dimen/_17sdp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,14 +16,14 @@
 
         <FrameLayout
             android:id="@+id/tileIcon"
-            android:layout_width="@dimen/_48sdp"
-            android:layout_height="@dimen/_48sdp"
+            android:layout_width="@dimen/_37sdp"
+            android:layout_height="@dimen/_37sdp"
             android:background="@drawable/bg_tile_high_16">
 
             <ImageView
                 android:id="@+id/ivIcon"
-                android:layout_width="@dimen/_26sdp"
-                android:layout_height="@dimen/_26sdp"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
                 android:layout_gravity="center"
                 android:importantForAccessibility="no"
                 android:src="@drawable/ic_sync"
@@ -31,9 +31,9 @@
         </FrameLayout>
 
         <LinearLayout
-            android:layout_width="@dimen/_0sdp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginStart="@dimen/_11sdp"
             android:layout_weight="1"
             android:orientation="vertical">
 
@@ -42,7 +42,7 @@
                 style="@style/Text.Semibold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/_19sdp" />
+                android:textSize="@dimen/_15sdp" />
 
             <TextView
                 android:id="@+id/tvSub"
@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_2sdp"
                 android:textColor="@color/color_text_secondary"
-                android:textSize="@dimen/_13_5sdp" />
+                android:textSize="@dimen/_10sdp" />
         </LinearLayout>
     </LinearLayout>
 
@@ -59,8 +59,8 @@
         android:id="@+id/progress"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_6sdp"
-        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_height="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_11sdp"
         android:max="100"
         android:progressDrawable="@drawable/progress_refresh" />
 
@@ -68,14 +68,14 @@
         android:id="@+id/llRows"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_11sdp"
         android:orientation="vertical" />
 
     <TextView
         android:id="@+id/btnAction"
         style="@style/Button.Secondary"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_52sdp"
-        android:layout_marginTop="@dimen/_14sdp"
-        android:minHeight="@dimen/_52sdp" />
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_11sdp"
+        android:minHeight="@dimen/_40sdp" />
 </LinearLayout>

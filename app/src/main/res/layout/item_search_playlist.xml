@@ -2,31 +2,31 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/_68sdp"
-    android:layout_marginTop="@dimen/_5sdp"
-    android:layout_marginBottom="@dimen/_5sdp"
+    android:layout_height="@dimen/_52sdp"
+    android:layout_marginTop="@dimen/_4sdp"
+    android:layout_marginBottom="@dimen/_4sdp"
     android:background="@drawable/bg_row"
     android:clickable="true"
     android:focusable="true"
     android:gravity="center_vertical"
     android:orientation="horizontal"
-    android:paddingStart="@dimen/_12sdp"
-    android:paddingEnd="@dimen/_12sdp">
+    android:paddingStart="@dimen/_9sdp"
+    android:paddingEnd="@dimen/_9sdp">
 
     <ImageView
         android:id="@+id/ivIcon"
-        android:layout_width="@dimen/_44sdp"
-        android:layout_height="@dimen/_44sdp"
+        android:layout_width="@dimen/_34sdp"
+        android:layout_height="@dimen/_34sdp"
         android:background="@drawable/bg_gradient_14"
         android:importantForAccessibility="no"
-        android:padding="@dimen/_11sdp"
+        android:padding="@dimen/_8sdp"
         android:src="@drawable/ic_video_library"
         app:tint="@color/white" />
 
     <LinearLayout
-        android:layout_width="@dimen/_0sdp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_9sdp"
         android:layout_weight="1"
         android:orientation="vertical">
 
@@ -44,12 +44,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_2sdp"
-            android:textSize="@dimen/_12_5sdp" />
+            android:textSize="@dimen/_10sdp" />
     </LinearLayout>
 
     <ImageView
-        android:layout_width="@dimen/_22sdp"
-        android:layout_height="@dimen/_22sdp"
+        android:layout_width="@dimen/_17sdp"
+        android:layout_height="@dimen/_17sdp"
         android:importantForAccessibility="no"
         android:src="@drawable/ic_chevron_right"
         app:tint="@color/color_text_secondary" />

@@ -48,7 +48,7 @@
     <style name="Text.Error" parent="Text">
         <item name="android:textSize">@dimen/text_label</item>
         <item name="android:textColor">@color/color_error</item>
-        <item name="android:drawablePadding">@dimen/_6sdp</item>
+        <item name="android:drawablePadding">@dimen/_5sdp</item>
     </style>
 
     <!-- Buttons -->
@@ -56,9 +56,9 @@
         <item name="android:minHeight">@dimen/button_height</item>
         <item name="android:gravity">center</item>
         <item name="android:background">@drawable/bg_button_primary</item>
-        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
         <item name="android:fontFamily">@font/plus_jakarta_sans_semibold</item>
-        <item name="android:drawablePadding">@dimen/_6sdp</item>
+        <item name="android:drawablePadding">@dimen/_5sdp</item>
         <item name="android:paddingStart">@dimen/spacing_xl</item>
         <item name="android:paddingEnd">@dimen/spacing_xl</item>
         <item name="android:clickable">true</item>
@@ -85,7 +85,7 @@
     <style name="IconButton" parent="">
         <item name="android:layout_width">@dimen/back_button</item>
         <item name="android:layout_height">@dimen/back_button</item>
-        <item name="android:padding">@dimen/_11sdp</item>
+        <item name="android:padding">@dimen/_8sdp</item>
         <item name="android:background">@drawable/bg_icon_button</item>
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
@@ -94,39 +94,26 @@
     <style name="IconButton.Large">
         <item name="android:layout_width">@dimen/circle_button</item>
         <item name="android:layout_height">@dimen/circle_button</item>
-        <item name="android:padding">@dimen/_14sdp</item>
+        <item name="android:padding">@dimen/_11sdp</item>
     </style>
     <style name="IconButton.Plain" parent="">
         <item name="android:layout_width">@dimen/touch_target</item>
         <item name="android:layout_height">@dimen/touch_target</item>
-        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="android:padding">@dimen/_8sdp</item>
         <item name="android:background">@drawable/bg_ripple_circle</item>
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
     </style>
 
-    <style name="Chip" parent="Text">
-        <item name="android:minHeight">@dimen/chip_height</item>
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:background">@drawable/bg_chip</item>
-        <item name="android:textColor">@color/selector_chip_text</item>
-        <item name="android:textSize">@dimen/text_body_small</item>
-        <item name="android:fontFamily">@font/plus_jakarta_sans_semibold</item>
-        <item name="android:drawablePadding">@dimen/_8sdp</item>
-        <item name="android:paddingStart">@dimen/_14sdp</item>
-        <item name="android:paddingEnd">@dimen/_12sdp</item>
-        <item name="android:clickable">true</item>
-        <item name="android:focusable">true</item>
-    </style>
     <style name="ChipCount" parent="Text">
-        <item name="android:minWidth">@dimen/_22sdp</item>
-        <item name="android:minHeight">@dimen/_22sdp</item>
+        <item name="android:minWidth">@dimen/_17sdp</item>
+        <item name="android:minHeight">@dimen/_17sdp</item>
         <item name="android:gravity">center</item>
         <item name="android:background">@drawable/bg_chip_count</item>
         <item name="android:textColor">@color/selector_chip_text</item>
         <item name="android:textSize">@dimen/text_caption</item>
-        <item name="android:paddingStart">@dimen/_6sdp</item>
-        <item name="android:paddingEnd">@dimen/_6sdp</item>
+        <item name="android:paddingStart">@dimen/_5sdp</item>
+        <item name="android:paddingEnd">@dimen/_5sdp</item>
     </style>
 
     <style name="Input" parent="Text">
@@ -138,40 +125,9 @@
         <item name="android:importantForAutofill" tools:targetApi="26">no</item>
         <item name="android:textCursorDrawable">@drawable/cursor_accent</item>
     </style>
-    <style name="OnbFloatCard" parent="">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:orientation">horizontal</item>
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:background">@drawable/bg_art_float</item>
-        <item name="android:paddingStart">@dimen/_10sdp</item>
-        <item name="android:paddingEnd">@dimen/_14sdp</item>
-        <item name="android:paddingTop">@dimen/_10sdp</item>
-        <item name="android:paddingBottom">@dimen/_10sdp</item>
-    </style>
-    <style name="OnbFloatTexts" parent="">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginStart">@dimen/_10sdp</item>
-        <item name="android:orientation">vertical</item>
-    </style>
-    <style name="OnbFloatName" parent="Text.Semibold">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">@dimen/_13sdp</item>
-    </style>
-    <style name="OnbFloatCount" parent="Text">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">@color/color_text_secondary</item>
-        <item name="android:textSize">@dimen/_11sdp</item>
-    </style>
-    <style name="OnbFloatIcon" parent="">
-        <item name="android:layout_width">@dimen/_34sdp</item>
-        <item name="android:layout_height">@dimen/_34sdp</item>
-        <item name="android:background">@drawable/bg_gradient_11</item>
-        <item name="android:padding">@dimen/_7sdp</item>
-        <item name="android:importantForAccessibility">no</item>
-        <item name="tint">@color/white</item>
-    </style>
+
+    <attr name="icon_color" format="color|reference" />
+
+
+
 </resources>

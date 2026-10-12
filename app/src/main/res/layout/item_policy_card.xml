@@ -4,10 +4,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="@dimen/_12sdp"
+    android:layout_marginTop="@dimen/_9sdp"
     android:background="@drawable/bg_group_card"
     android:orientation="vertical"
-    android:padding="@dimen/_16sdp">
+    android:padding="@dimen/_12sdp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,8 +17,8 @@
 
         <ImageView
             android:id="@+id/ivIcon"
-            android:layout_width="@dimen/_20sdp"
-            android:layout_height="@dimen/_20sdp"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
             android:importantForAccessibility="no"
             app:tint="@color/color_accent_light" />
 
@@ -27,8 +27,8 @@
             style="@style/Text.Semibold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_10sdp"
-            android:textSize="@dimen/_15_5sdp" />
+            android:layout_marginStart="@dimen/_8sdp"
+            android:textSize="@dimen/_12sdp" />
     </LinearLayout>
 
     <TextView
@@ -36,8 +36,8 @@
         style="@style/Text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_6sdp"
         android:textColor="@color/color_text_secondary"
-        android:textSize="@dimen/_14sdp"
-        app:lineHeight="@dimen/_22_5sdp" />
+        android:textSize="@dimen/_11sdp"
+        app:lineHeight="@dimen/_17sdp" />
 </LinearLayout>

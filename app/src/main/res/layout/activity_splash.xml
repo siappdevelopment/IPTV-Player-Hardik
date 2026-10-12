@@ -19,11 +19,11 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="@dimen/_92sdp"
-            android:layout_height="@dimen/_92sdp"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
             android:background="@drawable/bg_gradient_30"
             android:importantForAccessibility="no"
-            android:padding="@dimen/_22sdp"
+            android:padding="@dimen/_17sdp"
             android:src="@drawable/ic_live_tv"
             app:tint="@color/white" />
 
@@ -31,14 +31,14 @@
             style="@style/Text.Display"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_14sdp"
             android:text="@string/brand_name" />
 
         <TextView
             style="@style/Text.Body"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_5sdp"
             android:text="@string/brand_tagline"
             android:textColor="@color/color_text_secondary" />
     </LinearLayout>
@@ -48,14 +48,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center_horizontal"
-        android:layout_marginBottom="@dimen/_56sdp"
+        android:layout_marginBottom="@dimen/_43sdp"
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
         <ProgressBar
             style="@android:style/Widget.Material.ProgressBar.Horizontal"
-            android:layout_width="@dimen/_120sdp"
-            android:layout_height="@dimen/_4sdp"
+            android:layout_width="@dimen/_92sdp"
+            android:layout_height="@dimen/_3sdp"
             android:indeterminate="true"
             android:indeterminateTint="@color/color_primary"
             android:progressBackgroundTint="@color/color_surface_high" />
@@ -64,9 +64,9 @@
             style="@style/Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_12sdp"
-            android:text="@string/splash_loading"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:text="This Action Can Contain ADS"
             android:textColor="@color/color_text_tertiary"
-            android:textSize="@dimen/_13sdp" />
+            android:textSize="@dimen/_10sdp" />
     </LinearLayout>
 </FrameLayout>

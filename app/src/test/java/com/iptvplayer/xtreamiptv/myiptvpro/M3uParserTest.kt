@@ -1,7 +1,7 @@
 package com.iptvplayer.xtreamiptv.myiptvpro
 
-import com.iptvplayer.xtreamiptv.myiptvpro.domain.model.GROUP_UNKNOWN
-import com.iptvplayer.xtreamiptv.myiptvpro.domain.parser.M3uParser
+import com.iptvplayer.xtreamiptv.myiptvpro.IPTV.domain.model.GROUP_UNKNOWN
+import com.iptvplayer.xtreamiptv.myiptvpro.IPTV.domain.parser.M3uParser
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNull
 import org.junit.Test

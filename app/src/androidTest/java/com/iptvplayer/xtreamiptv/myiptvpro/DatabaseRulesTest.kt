@@ -4,11 +4,11 @@ import android.content.Context
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.iptvplayer.xtreamiptv.myiptvpro.data.local.database.AppDatabase
-import com.iptvplayer.xtreamiptv.myiptvpro.data.local.entity.ChannelEntity
-import com.iptvplayer.xtreamiptv.myiptvpro.data.local.entity.FavoriteEntity
-import com.iptvplayer.xtreamiptv.myiptvpro.data.local.entity.PlaylistEntity
-import com.iptvplayer.xtreamiptv.myiptvpro.data.local.entity.RecentEntity
+import com.iptvplayer.xtreamiptv.myiptvpro.IPTV.data.local.database.AppDatabase
+import com.iptvplayer.xtreamiptv.myiptvpro.IPTV.data.local.entity.ChannelEntity
+import com.iptvplayer.xtreamiptv.myiptvpro.IPTV.data.local.entity.FavoriteEntity
+import com.iptvplayer.xtreamiptv.myiptvpro.IPTV.data.local.entity.PlaylistEntity
+import com.iptvplayer.xtreamiptv.myiptvpro.IPTV.data.local.entity.RecentEntity
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking
 import org.junit.After

@@ -3,32 +3,32 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/_52sdp"
-    android:layout_marginBottom="@dimen/_8sdp"
+    android:layout_height="@dimen/_40sdp"
+    android:layout_marginBottom="@dimen/_6sdp"
     android:background="@drawable/bg_tile_raised_14"
     android:gravity="center_vertical"
     android:orientation="horizontal"
-    android:paddingStart="@dimen/_12sdp"
-    android:paddingEnd="@dimen/_12sdp">
+    android:paddingStart="@dimen/_9sdp"
+    android:paddingEnd="@dimen/_9sdp">
 
     <FrameLayout
-        android:layout_width="@dimen/_32sdp"
-        android:layout_height="@dimen/_32sdp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="@drawable/bg_tile_high_10">
 
         <ImageView
             android:id="@+id/ivIcon"
-            android:layout_width="@dimen/_18sdp"
-            android:layout_height="@dimen/_18sdp"
+            android:layout_width="@dimen/_14sdp"
+            android:layout_height="@dimen/_14sdp"
             android:layout_gravity="center"
             android:importantForAccessibility="no"
             app:tint="@color/color_accent_light" />
     </FrameLayout>
 
     <LinearLayout
-        android:layout_width="@dimen/_0sdp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_9sdp"
         android:layout_weight="1"
         android:orientation="vertical">
 
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:ellipsize="end"
             android:maxLines="1"
-            android:textSize="@dimen/_14sdp" />
+            android:textSize="@dimen/_11sdp" />
 
         <TextView
             android:id="@+id/tvMeta"
@@ -47,32 +47,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/color_text_secondary"
-            android:textSize="@dimen/_12sdp" />
+            android:textSize="@dimen/_9sdp" />
     </LinearLayout>
 
     <ImageView
         android:id="@+id/ivDone"
-        android:layout_width="@dimen/_22sdp"
-        android:layout_height="@dimen/_22sdp"
-        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_width="@dimen/_17sdp"
+        android:layout_height="@dimen/_17sdp"
+        android:layout_marginStart="@dimen/_9sdp"
         android:importantForAccessibility="no"
         android:src="@drawable/ic_check_circle"
         app:tint="@color/color_success" />
 
     <ImageView
         android:id="@+id/ivFailed"
-        android:layout_width="@dimen/_22sdp"
-        android:layout_height="@dimen/_22sdp"
-        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_width="@dimen/_17sdp"
+        android:layout_height="@dimen/_17sdp"
+        android:layout_marginStart="@dimen/_9sdp"
         android:importantForAccessibility="no"
         android:src="@drawable/ic_error"
         app:tint="@color/color_error" />
 
     <ImageView
         android:id="@+id/ivSpinner"
-        android:layout_width="@dimen/_20sdp"
-        android:layout_height="@dimen/_20sdp"
-        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_9sdp"
         android:importantForAccessibility="no"
         android:src="@drawable/anim_spinner_blue" />
 
@@ -81,8 +81,8 @@
         style="@style/Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_9sdp"
         android:text="@string/refresh_waiting"
         android:textColor="@color/color_text_tertiary"
-        android:textSize="@dimen/_12sdp" />
+        android:textSize="@dimen/_9sdp" />
 </LinearLayout>

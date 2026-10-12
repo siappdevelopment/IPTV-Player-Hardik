@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:paddingTop="@dimen/_18sdp"
+    android:paddingTop="@dimen/_14sdp"
     android:paddingBottom="@dimen/spacing_sm">
 
     <LinearLayout
@@ -14,7 +14,7 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="@dimen/_0sdp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical">
@@ -27,13 +27,13 @@
                 android:ellipsize="end"
                 android:letterSpacing="-0.01"
                 android:maxLines="1"
-                android:textSize="@dimen/_22sdp"
+                android:textSize="@dimen/_17sdp"
                 android:fontFamily="@font/plus_jakarta_sans_semibold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_5sdp"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
@@ -41,71 +41,86 @@
                     android:id="@+id/tvStatus"
                     style="@style/Text"
                     android:layout_width="wrap_content"
-                    android:layout_height="@dimen/_24sdp"
+                    android:layout_height="@dimen/_18sdp"
                     android:background="@drawable/bg_status_chip"
                     android:drawableStart="@drawable/bg_dot_status"
-                    android:drawablePadding="@dimen/_5sdp"
+                    android:drawablePadding="@dimen/_4sdp"
                     android:gravity="center_vertical"
-                    android:paddingStart="@dimen/_8sdp"
-                    android:paddingEnd="@dimen/_8sdp"
-                    android:textSize="@dimen/_11_5sdp"
+                    android:paddingStart="@dimen/_6sdp"
+                    android:paddingEnd="@dimen/_6sdp"
+                    android:textSize="@dimen/_9sdp"
                     android:fontFamily="@font/plus_jakarta_sans_semibold" />
 
                 <TextView
                     android:id="@+id/tvQuality"
                     style="@style/Text"
                     android:layout_width="wrap_content"
-                    android:layout_height="@dimen/_24sdp"
-                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_marginStart="@dimen/_6sdp"
                     android:background="@drawable/bg_status_chip"
                     android:gravity="center_vertical"
-                    android:paddingStart="@dimen/_8sdp"
-                    android:paddingEnd="@dimen/_8sdp"
-                    android:textSize="@dimen/_11_5sdp"
+                    android:paddingStart="@dimen/_6sdp"
+                    android:paddingEnd="@dimen/_6sdp"
+                    android:textSize="@dimen/_9sdp"
                     android:fontFamily="@font/plus_jakarta_sans_semibold" />
-
-                <TextView
-                    android:id="@+id/tvCategories"
-                    style="@style/Text.Label"
-                    android:layout_width="@dimen/_0sdp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_8sdp"
-                    android:layout_weight="1"
-                    android:ellipsize="end"
-                    android:maxLines="1" />
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvCategories"
+                style="@style/Text.Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:ellipsize="end"
+                android:maxLines="1" />
         </LinearLayout>
 
-        <com.iptvplayer.xtreamiptv.myiptvpro.ui.common.IconTextView
+        <LinearLayout
             android:id="@+id/btnFavorite"
-            style="@style/Text"
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/_48sdp"
-            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_height="@dimen/_37sdp"
+            android:layout_marginStart="@dimen/_11sdp"
             android:background="@drawable/bg_search_pill_button_14"
             android:clickable="true"
-            android:drawableStart="@drawable/sel_favorite"
-            android:drawablePadding="@dimen/_6sdp"
-            android:drawableTint="@color/selector_fav_tint"
             android:focusable="true"
-            android:gravity="center_vertical"
-            android:paddingStart="@dimen/_14sdp"
-            android:paddingEnd="@dimen/_14sdp"
-            android:textSize="@dimen/_14sdp"
-            android:fontFamily="@font/plus_jakarta_sans_semibold" />
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_11sdp"
+            android:paddingEnd="@dimen/_11sdp">
+
+            <ImageView
+                android:id="@+id/ivFavorite"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:duplicateParentState="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/sel_favorite"
+                app:tint="@color/selector_fav_tint" />
+
+            <TextView
+                android:id="@+id/tvFavorite"
+                style="@style/Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:fontFamily="@font/plus_jakarta_sans_semibold"
+                android:text="@string/player_favorite"
+                android:textSize="@dimen/_11sdp" />
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_12sdp"
         android:gravity="bottom"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/tvListTitle"
             style="@style/Text.Subtitle"
-            android:layout_width="@dimen/_0sdp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ellipsize="end"

@@ -3,27 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginStart="@dimen/_6sdp"
-    android:layout_marginTop="@dimen/_5sdp"
-    android:layout_marginEnd="@dimen/_6sdp"
-    android:layout_marginBottom="@dimen/_5sdp"
+    android:layout_marginStart="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_4sdp"
+    android:layout_marginEnd="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_4sdp"
     android:background="@drawable/bg_card_small"
     android:clickable="true"
     android:focusable="true"
     android:gravity="center_vertical"
     android:orientation="horizontal"
-    android:paddingStart="@dimen/_8sdp"
-    android:paddingTop="@dimen/_8sdp"
-    android:paddingEnd="@dimen/_4sdp"
-    android:paddingBottom="@dimen/_8sdp">
+    android:paddingStart="@dimen/_6sdp"
+    android:paddingTop="@dimen/_6sdp"
+    android:paddingEnd="@dimen/_3sdp"
+    android:paddingBottom="@dimen/_6sdp">
 
     <FrameLayout
-        android:layout_width="@dimen/_72sdp"
-        android:layout_height="@dimen/_72sdp"
+        android:layout_width="@dimen/_55sdp"
+        android:layout_height="@dimen/_55sdp"
         android:background="@drawable/bg_thumb_15"
         android:clipToOutline="true">
 
-        <com.iptvplayer.xtreamiptv.myiptvpro.ui.common.ChannelThumbView
+        <com.iptvplayer.xtreamiptv.myiptvpro.IPTV.ui.common.ChannelThumbView
             android:id="@+id/thumb"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
@@ -34,15 +34,15 @@
             android:background="#590B0D16" />
 
         <FrameLayout
-            android:layout_width="@dimen/_36sdp"
-            android:layout_height="@dimen/_36sdp"
+            android:layout_width="@dimen/_27sdp"
+            android:layout_height="@dimen/_27sdp"
             android:layout_gravity="center"
             android:background="@drawable/bg_gradient_12">
 
             <ImageView
                 android:id="@+id/ivIcon"
-                android:layout_width="@dimen/_20sdp"
-                android:layout_height="@dimen/_20sdp"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
                 android:layout_gravity="center"
                 android:importantForAccessibility="no"
                 android:src="@drawable/ic_video_library"
@@ -51,9 +51,9 @@
     </FrameLayout>
 
     <LinearLayout
-        android:layout_width="@dimen/_0sdp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_9sdp"
         android:layout_weight="1"
         android:orientation="vertical">
 
@@ -64,13 +64,13 @@
             android:layout_height="wrap_content"
             android:ellipsize="end"
             android:maxLines="1"
-            android:textSize="@dimen/_16sdp"
+            android:textSize="@dimen/_12sdp"
             android:fontFamily="@font/plus_jakarta_sans_semibold" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_2sdp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
@@ -79,13 +79,13 @@
                 style="@style/Text.Caption"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/_12_5sdp" />
+                android:textSize="@dimen/_10sdp" />
 
             <View
-                android:layout_width="@dimen/_3sdp"
-                android:layout_height="@dimen/_3sdp"
-                android:layout_marginStart="@dimen/_8sdp"
-                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_width="@dimen/_2sdp"
+                android:layout_height="@dimen/_2sdp"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
                 android:background="@drawable/bg_dot_sep" />
 
             <TextView
@@ -93,11 +93,11 @@
                 style="@style/Text.Caption"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:drawablePadding="@dimen/_4sdp"
+                android:drawablePadding="@dimen/_3sdp"
                 android:drawableTint="@color/color_accent_light"
                 android:gravity="center_vertical"
                 android:textColor="@color/color_accent_light"
-                android:textSize="@dimen/_12_5sdp" />
+                android:textSize="@dimen/_10sdp" />
         </LinearLayout>
     </LinearLayout>
 

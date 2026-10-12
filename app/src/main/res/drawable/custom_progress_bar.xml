@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background (Unselected Grey) -->
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp"/>
+            <solid android:color="#141827"/>
+        </shape>
+    </item>
+
+    <!-- Progress (Blue Color) -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <corners android:radius="8dp"/>
+                <solid android:color="#25C496"/> <!-- Blue Color -->
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>
